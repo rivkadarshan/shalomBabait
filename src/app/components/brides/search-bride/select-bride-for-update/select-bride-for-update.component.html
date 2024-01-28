@@ -1,0 +1,21 @@
+<h2>רשימת הכלות העונות על הקריטריונים</h2>
+<mat-selection-list [multiple]="false" [(ngModel)]="brideSelect" >
+    <mat-list-option *ngFor="let bride of brides" [value]="bride">
+        {{bride.bridename}}
+        <label>,</label>
+        {{bride.groomname}}
+        <label>,</label>
+        {{bride.groomphone}}
+        <label>,</label>
+        {{bride.bridephone}}
+    </mat-list-option> 
+</mat-selection-list>
+<div>Your favorite season is: {{brideSelect}}</div>
+
+<button mat-icon-button color="primary" (click)="onCancelClick()"><mat-icon>close</mat-icon></button>
+<button mat-icon-button color="primary" (click)="onNew1()"><mat-icon>add</mat-icon></button>
+<button  mat-icon-button color="primary" (click)="onSelectClick()"><mat-icon>check</mat-icon></button>
+
+
+
+

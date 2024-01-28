@@ -1,0 +1,33 @@
+<!-- <h3>החתונה עוד {{}}</h3> -->
+<h3 class="h1Koteret"><h3>כלה: {{bride.bridename}} ,חתן: {{bride.groomname}}</h3><b>רשימת התכשיטים לבחירה</b></h3>
+<button class="styleButton" title="הוספת תכשיט" (click)="onAdditionClick()"><mat-icon>add</mat-icon>הוספת תכשיט</button>
+<div class="container">
+    <table *ngIf="jewelry.length!=0" class="table table-hover">
+      <thead>
+        <tr>
+          <th>בחרה?</th>
+          <th>שם תכשיט</th>
+          <th>תקציב</th>
+          <th>הערות</th>
+          <th> </th>
+        </tr>
+      </thead>
+      <tbody id="brideJewelryTable">   
+        <tr *ngFor="let j of jewelry" >
+         <td>
+          <mat-icon *ngIf="j.ischoose">done_outline</mat-icon>
+          <mat-icon *ngIf="!j.ischoose">clear</mat-icon>
+        </td>
+        <td>{{j.jewelryname}}</td>
+          <td [ngStyle]="{'color':j.budget }" >{{j.budget}}</td>
+          <td>{{j.descriptionBridejewelry}}</td>
+          <button mat-icon-button title="עדכון" (click)="OnUpdateBrideJewrely(j.bridejewelryid)"><mat-icon>edit</mat-icon></button>
+          <button mat-icon-button title="מחיקה" (click)="onDelete(j.bridejewelryid)"><mat-icon>delete_sweep</mat-icon></button>
+        </tr> 
+
+      </tbody>
+    </table>
+    <h3 id="h1ListJewelry" *ngIf="jewelry.length===0">לא נמצא מידע</h3>
+</div>
+
+  

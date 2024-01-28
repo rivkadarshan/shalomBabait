@@ -1,0 +1,16 @@
+.red{
+    background-color: red;
+}
+.green{
+    background-color:green;
+}
+.debt{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.itrot{
+    display: flex;
+    justify-content: space-between; /* Adjust this according to your layout preferences */
+    align-items: center; /* Align items vertically in the center */
+    direction: rtl;
+  }

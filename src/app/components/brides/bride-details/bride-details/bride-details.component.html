@@ -1,0 +1,5 @@
+<mat-grid-list cols="4" rowHeight="25vh">
+    <mat-grid-tile  id="bride-jewlery" [colspan]="3" [rowspan]="3"><app-bride-jewlery [bride]="bride"></app-bride-jewlery> </mat-grid-tile>
+    <mat-grid-tile id="bride-more-details" [colspan]="1" [rowspan]="4"><app-bride-more-details [bride]="bride" [searchOrNew]="searchOrNew"></app-bride-more-details></mat-grid-tile>
+    <mat-grid-tile id="debt" [colspan]="3" [rowspan]="1"><app-debt [bride]="bride"></app-debt></mat-grid-tile>
+</mat-grid-list>

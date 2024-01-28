@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.styleButton
+{
+  border: none;
+  background-color:#F4EBD0;
+  border: 1rem solid white;
+  border-bottom: none;
+  border-radius:15%;
+}
+.h1Koteret{
+    text-align: center;
+    font-weight: bold;
+  }

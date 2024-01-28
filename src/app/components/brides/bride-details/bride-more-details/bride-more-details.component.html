@@ -1,0 +1,60 @@
+<h3 class="h1Koteret" *ngIf="searchOrNew==='new'">הוספת כלה</h3>
+<h3 class="h1Koteret" *ngIf="searchOrNew==='search'">פרטי כלה</h3>
+<button class="styleButton" *ngIf="searchOrNew=='search'" title="עריכה" (click)="onupdate()"><mat-icon>edit</mat-icon>עריכה</button>
+<button class="styleButton" (click)="onSave()" title="שמירה"><mat-icon>save</mat-icon>שמירה</button>
+<div id="brideMoreDetComponent">
+<form>
+    <p>
+        <mat-form-field appearance="fill">
+          <mat-label>שם כלה</mat-label>
+          <input [readonly]="updateOrReadonly" matInput placeholder="" [(ngModel)]="bride.bridename"  name="brideName">
+          <mat-icon matSuffix>person_outline</mat-icon>
+        </mat-form-field>
+    </p>
+  </form>  
+  <form>
+    <p>
+        <mat-form-field appearance="fill">
+          <mat-label>שם חתן</mat-label>
+          <input [readonly]="updateOrReadonly" matInput placeholder="" [(ngModel)]="bride.groomname"  name="groomName">
+          <mat-icon matSuffix>person_outline</mat-icon>
+        </mat-form-field>
+    </p>
+  </form> 
+  <form> 
+    <p>
+        <mat-form-field appearance="fill">
+          <mat-label>טלפון חתן</mat-label>
+          <input [readonly]="updateOrReadonly" matInput maxlength="10" pattern='[0-9]*$' [(ngModel)]="bride.groomphone" value={{bride.groomphone}} name="groomPhone">
+          <mat-icon matSuffix>phone_enabled</mat-icon>
+        </mat-form-field>
+    </p>
+  </form> 
+  <form> 
+    <p>
+        <mat-form-field appearance="fill">
+          <mat-label>טלפון כלה</mat-label>
+          <input [readonly]="updateOrReadonly" matInput maxlength="10"  [(ngModel)]="bride.bridephone" value={{bride.bridephone}} name="bridePhone">
+          <mat-icon matSuffix>phone_enabled</mat-icon>
+        </mat-form-field>
+    </p>
+  </form> 
+  <form> 
+    <mat-form-field appearance="fill">
+    <mat-label>תאריך חתונה</mat-label>
+    <mat-hint>mm/dd/yyyy</mat-hint>
+    <input [readonly]="updateOrReadonly" matInput [matDatepicker]="picker" value={{bride.brideinsertdate}}>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </form>
+  <br><br> 
+  <form>
+    <mat-form-field>
+        <mat-label>הערות</mat-label>
+        <textarea matInput placeholder="הערות"  [(ngModel)]="bride.descriptionBride" value={{bride.descriptionBride}} name="descriptionBride"></textarea>
+    </mat-form-field>
+   <br><br>
+</form>
+</div>
+

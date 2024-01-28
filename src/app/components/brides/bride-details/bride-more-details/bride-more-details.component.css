@@ -1,0 +1,8 @@
+#brideMoreDetComponent{
+  background-color: #F4EBD0;
+  padding: 2rem;
+  border: 1rem solid white;
+}
+mat-form-field{
+  width: 25rem;
+}
