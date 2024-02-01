@@ -1,11 +1,10 @@
 
 <button class="additionButton" title="הוספת כלה" (click)="addNewBride()">הוספת כלה <mat-icon>group_add</mat-icon> </button>
-<div id="searchId">
+  <div id="searchId">  <input type="text" [(ngModel)]="searchName" placeholder="חיפוש לפי שם" (input)="onSearchName()">
   <input type="text" [(ngModel)]="searchPhone" placeholder="חיפוש לפי טלפון" (input)="onSearchPhone()">
-  <input type="text" [(ngModel)]="searchName" placeholder="חיפוש לפי שם" (input)="onSearchName()">
 </div>
 <router-outlet></router-outlet>
-<h1 *ngIf="brides.length===0">לא נמצאו רשומות</h1>
+<h1>נמצאו: {{brides.length}}</h1>
 <div class="container">
     <table class="table table-hover">
       <thead>
@@ -35,4 +34,5 @@
       </tr> 
     </tbody>
   </table>
+  <h1 *ngIf="brides.length===0">לא נמצאו רשומות</h1>
 </div>

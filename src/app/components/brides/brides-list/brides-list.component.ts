@@ -1,12 +1,13 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
-import { Router } from '@angular/router';
 import { Bride } from 'src/app/classes/bride';
 import { BrideService } from 'src/app/services/bride.service';
 import { ConfirmDialogComponent } from '../../confirm-dialog/confirm-dialog.component';
 import { bridejewleryService } from 'src/app/services/bridejewleryService.services';
 import { BrideMoreDetailsComponent } from '../bride-details/bride-more-details/bride-more-details.component';
 import { BrideJewleryComponent } from '../bride-details/bride-jewlery/bride-jewlery.component';
+
+export type search_or_new = 'search' | 'new'
 
 @Component({
   selector: 'app-brides-list',
@@ -24,7 +25,10 @@ export class BridesListComponent implements OnInit{
   clickedRows = new Set<Bride>();
   router: any;
 
- constructor(rauter:Router, private brideServ:BrideService,private brideJewleryServe:bridejewleryService, private dialog: MatDialog)
+ constructor(
+  private brideServ:BrideService,
+  private brideJewleryServe:bridejewleryService,
+  private dialog: MatDialog)
  {
  }
   ngOnInit(): void {

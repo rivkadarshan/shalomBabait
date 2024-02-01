@@ -1,7 +1,9 @@
+
 <h3 class="h1Koteret" *ngIf="searchOrNew==='new'">הוספת כלה</h3>
 <h3 class="h1Koteret" *ngIf="searchOrNew==='search'">פרטי כלה</h3>
 <button class="styleButton" *ngIf="searchOrNew=='search'" title="עריכה" (click)="onupdate()"><mat-icon>edit</mat-icon>עריכה</button>
 <button class="styleButton" (click)="onSave()" title="שמירה"><mat-icon>save</mat-icon>שמירה</button>
+<button class="styleButton" title="הוספת תכשיט" (click)="onAdditionClick()"><mat-icon>add</mat-icon>הוספת תכשיט</button>
 <div id="brideMoreDetComponent">
 <form>
     <p>
@@ -56,5 +58,7 @@
     </mat-form-field>
    <br><br>
 </form>
+<label>שולם:<input class="debt" [(ngModel)]="bride.paid"> </label>
+<label>חוב:<input class="debt" ></label>
 </div>
 

@@ -1,6 +1,6 @@
 <!-- <h3>החתונה עוד {{}}</h3> -->
 <h3 class="h1Koteret"><h3>כלה: {{bride.bridename}} ,חתן: {{bride.groomname}}</h3><b>רשימת התכשיטים לבחירה</b></h3>
-<button class="styleButton" title="הוספת תכשיט" (click)="onAdditionClick()"><mat-icon>add</mat-icon>הוספת תכשיט</button>
+<button class="styleButton" title="הוספת תכשיט" (click)="openDialog()"><mat-icon>add</mat-icon>הוספת תכשיט</button>
 <div class="container">
     <table *ngIf="jewelry.length!=0" class="table table-hover">
       <thead>
@@ -9,6 +9,7 @@
           <th>שם תכשיט</th>
           <th>תקציב</th>
           <th>הערות</th>
+          <th>לתשלום</th>
           <th> </th>
         </tr>
       </thead>
@@ -21,12 +22,14 @@
         <td>{{j.jewelryname}}</td>
           <td [ngStyle]="{'color':j.budget }" >{{j.budget}}</td>
           <td>{{j.descriptionBridejewelry}}</td>
+          <td>{{j.sumtopay}}</td>
           <button mat-icon-button title="עדכון" (click)="OnUpdateBrideJewrely(j.bridejewelryid)"><mat-icon>edit</mat-icon></button>
           <button mat-icon-button title="מחיקה" (click)="onDelete(j.bridejewelryid)"><mat-icon>delete_sweep</mat-icon></button>
         </tr> 
 
       </tbody>
     </table>
+    <label>{{selectJewelry}}</label>
     <h3 id="h1ListJewelry" *ngIf="jewelry.length===0">לא נמצא מידע</h3>
 </div>
 

@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { Bride } from '../classes/bride';
 
 @Injectable({
@@ -13,21 +13,14 @@ export class BrideService {
   url="https://localhost:7111/api/BrideControler/"
   constructor(private http:HttpClient) { }
 
-
-  getByNameOrPhone(b:Bride):Observable<Array<Bride>>
-  {   
-   return this.http.get<Array<Bride>>(`${this.url}GetByNameOrPhone?name1=${b.bridename}&name2=${b.groomname}&phone=${b.bridephone}`)
+  addBride(newbride: Bride): Observable<number> {
+    return this.http.post<number>(`${this.url}AddBride`, newbride).pipe(
+        map((response: number) => {
+            return response;
+        })
+    );
   }
-   postAddBride(newbride:Bride):Observable<Bride>
-   {
-    debugger
-    return this.http.post<Bride>(`${this.url}AddBride`,newbride)
-   }
 
-   putUpdateBride(brideToUpdate:Bride)
-   {
-    return this.http.put<Bride>(`${this.url}updateBride`,brideToUpdate)
-   }
   getAll():Observable<Array<Bride>>
   {
     return this.http.get<Array<Bride>>(`${this.url}GetAll`)
@@ -41,7 +34,7 @@ export class BrideService {
   updateBride(editBride:Bride):Observable<Array<Bride>>
   
   {
-    return this.http.put<Array<Bride>>(this.url+"PutupdateBride/",editBride)
+    return this.http.put<Array<Bride>>(this.url+"UpdateBride/",editBride)
   }
 
   loadData()
@@ -59,6 +52,14 @@ export class BrideService {
        }
      );
   }
+  getByNameOrPhone(editBride:Bride):Observable<Array<Bride>>
+  
+  {
+   return this.http.put<Array<Bride>>(this.url+"UpdateBride/",editBride)
+ 
+  }
 
  }  
+
+
 

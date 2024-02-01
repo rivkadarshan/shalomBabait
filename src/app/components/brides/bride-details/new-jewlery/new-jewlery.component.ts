@@ -2,7 +2,6 @@ import { Component, EventEmitter, Inject, Output } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { BrideJewlery } from 'src/app/classes/BrideJewelry';
 import { Jewelry } from 'src/app/classes/Jewelry';
-import { Bride } from 'src/app/classes/bride';
 import { bridejewleryService } from 'src/app/services/bridejewleryService.services';
 import { eNamesOfJewlery } from '../../../../enums/eNamesOfJewlery';
 

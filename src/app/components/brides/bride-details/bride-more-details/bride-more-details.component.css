@@ -6,3 +6,10 @@
 mat-form-field{
   width: 25rem;
 }
+.debt{
+  width: 8rem;
+}
+.dialog-content {
+  max-height: 400px; /* Adjust the maximum height as needed */
+  overflow-y: auto;
+}

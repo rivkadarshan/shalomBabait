@@ -19,6 +19,7 @@ export class BrideJewleryComponent implements OnInit {
   public selectJewelry: Array<Jewelry> = []
   sumbBudject:number=0
   date:Date=new Date;
+  public sumBuject:number=0;
   @Input() public bride = new Bride(0, "", "", "", "", new Date, new Date, 0,"",0,"");
 
   constructor(private bridejewleryServ: bridejewleryService, private dialog: MatDialog,@Inject(MAT_DIALOG_DATA) public dialogData: { bride: Bride } ) 
@@ -32,7 +33,7 @@ export class BrideJewleryComponent implements OnInit {
     this.refresh()
   }
 // פתיחת דיאלוג
-  private openDialog(): void {
+   openDialog(): void {
     const dialogRef = this.dialog.open(NewJewleryComponent, {
       data: {id: this.bride.brideid, SelectJewelry: this.selectJewelry}
     })
@@ -40,14 +41,9 @@ export class BrideJewleryComponent implements OnInit {
        this.ngOnInit()
     })
     dialogRef.afterClosed().subscribe(result =>{
-      console.log("closed")
       this.bridejewleryServ.loadData()
       this.refresh()
     })
-  }
-  
-  onAdditionClick() {
-    this.openDialog();
   }
   
   refresh(){
