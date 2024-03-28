@@ -1,0 +1,17 @@
+
+  img{
+    min-width: 45rem;
+    min-height: 45rem;
+    border-radius: 4rem;
+  }
+  .abautComponent{
+    display: flex;
+    padding: 8rem;
+    height: calc(100vh + 8rem); 
+    width: 100%;
+    align-items: center;
+  }
+ .LetterAboutShalomBabit
+ {
+    display: ruby;
+ }

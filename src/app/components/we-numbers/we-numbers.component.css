@@ -1,0 +1,16 @@
+.weNumbersComponent{
+    background-color: #BB7E2B;
+    display: flex;
+    text-align: center;
+    height: 25rem;
+    align-items: center;
+}
+
+.weNumbersComponent > div {
+    width: 100%; 
+    color: #022F39;
+}
+.number{
+    display: block;
+    font-size: 8rem;
+}

@@ -1,0 +1,14 @@
+.advertisingComponent{
+    height: calc(100vh + 8rem); 
+    width: 100%;
+    opacity: 40%;
+    background-image: url("../../../assets/photoes/rav shalom.png");
+}
+.title{
+    margin-top: 20rem;
+    margin-right: 20rem;
+    text-align: right;
+    font-size: 7rem;
+    opacity:1;
+    font-family:'Noto Sans Hebrew' ,sans-serif;
+}

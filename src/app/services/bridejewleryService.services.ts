@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { jewleryService } from 'src/app/services/jewlery.services';
+import { jewleryService } from 'src1/app/services/jewlery.services';
 import { BrideJewlery } from '../classes/BrideJewelry';
 
 @Injectable({
@@ -9,14 +9,15 @@ import { BrideJewlery } from '../classes/BrideJewelry';
 })    
 
 export class bridejewleryService {
-  url="https://localhost:7111/api/BridejewelryControler/"
-
+  url="https://localhost:44317/api/BridejewelryControler/"
+  
   constructor(private http:HttpClient,private jewleryServ:jewleryService) { }
 
   public brideJewelry:Array<BrideJewlery>=[]
+  
   getAll():Observable<Array<BrideJewlery>>
   {  
-    return this.http.get<Array<BrideJewlery>>(`${this.url}GetAll`)
+    return this.http.get<Array<BrideJewlery>>(`${this.url}getAll`)
   }
 
   loadData()
@@ -38,17 +39,17 @@ export class bridejewleryService {
 
   getById(id: number):Observable<Array<BrideJewlery>>
   {
-    return this.http.get<Array<BrideJewlery>>(`${this.url}GetJewelryAccordingToBrideId/${id}`);
+    return this.http.get<Array<BrideJewlery>>(`${this.url}getById/${id}`);
   }
 
   addBrideJewelry(newBrideJewelry:BrideJewlery):Observable<number>
   {
-    return this.http.post<number>(`${this.url}AddBrideJewelry`,newBrideJewelry); 
+    return this.http.post<number>(`${this.url}AddBrideJewelry`,newBrideJewelry);
   }
 
-   deleteBrideJewelry(brideJewelryId:number):Observable<number>
-  { 
-    return this.http.delete<number>(`${this.url}DeleteBrideJewelry/${brideJewelryId}`)
+   deleteBrideJewelry(id:number):Observable<Array<number>>
+  {
+    return this.http.delete<Array<number>>(this.url + "deleteBrideJewelry/" + id);
   }
 
   refreshList(list:Array<BrideJewlery>)

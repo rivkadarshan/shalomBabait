@@ -1,0 +1,14 @@
+<div class="TheySayAboutUsComponent">
+<label class="title">| מה אומרים עלינו</label>
+<div class="card-container">
+    <div class="card" *ngFor="let card of displayedCards">
+      <h3>{{card.id}}</h3>
+      <h3>{{card.title}}</h3>
+      <h3 class="name">{{card.name}}</h3>
+    </div>
+    <button class="circle" *ngFor="let card of cards">{{card.id}}</button>
+  </div>
+
+  <button (click)="prevCards()">Previous</button>
+  <button (click)="nextCards()">Next</button>
+ </div> 

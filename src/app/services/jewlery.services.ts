@@ -7,8 +7,8 @@ import { Jewelry } from '../classes/Jewelry';
   providedIn: 'root'
 })    
 
-export class jewleryService { 
-  url="https://localhost:7111/api/JewelryControler/"
+export class jewleryService {
+  url="https://localhost:44317/api/jewelryControler/"
   constructor(private http:HttpClient) { }
 
   private Jewelry:Array<Jewelry>=[]

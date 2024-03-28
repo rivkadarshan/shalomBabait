@@ -1,0 +1,21 @@
+.contact {
+    background-color: #BB7E2B;
+    position: fixed;
+    left: 0rem; 
+    top: 50%;
+    transform: translateY(-50%); 
+    z-index: 999;
+    width: 200px; 
+    height: 200px; 
+    border-radius: 0rem 3rem 3rem 0rem;
+    height: 15rem;
+    width: 4.9rem;
+    align-items: center;
+  }
+   ul {
+    background-color: #BB7E2B;
+    border-radius: 0rem 3rem 3rem 0rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 1.5rem;
+  }

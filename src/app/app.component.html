@@ -1,15 +1,10 @@
-<mat-toolbar id="heder">
-  <img src="../assets/Photos/LOGO.png" alt="חנות תכשיטים שייני פלייס" style="height: 9rem;">
-  <div class="dropdown">
-    <button class="dropbtn"><mat-icon>menu</mat-icon></button>
-    <div class="dropdown-content">
-      <a routerLink="/">דף הבית</a>
-      <a routerLink="/bridesList">רשימת כלות</a>
-      <a routerLink="/bride/search">חיפוש כלה</a>
-      <a routerLink="/bride/new">כלה חדשה</a>
-    </div>
-  </div>
-  <span class="example-spacer"></span>
-  <h1>{{timeNow | date : 'dd/MM/yyyy'}}</h1>
-</mat-toolbar>
+<app-header></app-header>
+<app-contact></app-contact>
+<app-advertising></app-advertising>
+<app-about></app-about>
+<app-donate-button></app-donate-button>
+<app-list-of-activities></app-list-of-activities>
+<app-we-numbers [targetNumber]="500"></app-we-numbers>
+<app-they-say-about-us></app-they-say-about-us>
+<app-footer></app-footer>
 <router-outlet></router-outlet>

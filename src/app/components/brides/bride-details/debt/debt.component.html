@@ -1,5 +1,0 @@
-<div class="itrot">
-<h3>חוב<input class="debt" type="number" [ngStyle]="{'color':isZchoot==true ? 'green' : 'red' }"  [(ngModel)]="bride.debt" ></h3>
-<h3>שולם<input class="debt" type="number" [ngStyle]="{'color':isZchoot==true ? 'green' : 'red' }"  [(ngModel)]="bride.paid" ></h3>
-<h3>יתרה<input class="debt" type="number" [ngStyle]="{'background-color': (bride.paid - bride.debt) < 0 ? 'lightcoral' : 'lightgreen' }" value="{{ bride.paid - bride.debt }}"></h3>
-</div>

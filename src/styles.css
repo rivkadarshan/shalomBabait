@@ -1,16 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body {background-color:#022F39;color: white; direction: rtl;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-.styleButton
-{
-  border: none;
-  background-color:#F4EBD0;
-  border: 1rem solid white;
-  border-bottom: none;
-  border-radius:15%;
+.title{
+   color: #BB7E2B;
+   font-size: 5rem;
 }
-.h1Koteret{
-    text-align: center;
-    font-weight: bold;
-  }
+.consultationAppointmentButton{
+   background-color: #BB7E2B;
+   border: none;
+   border-radius: 0rem 5.3rem 0rem 0rem;
+   height: 8rem;
+   width: 32rem;
+ }
+ a{
+   color: white;
+ }

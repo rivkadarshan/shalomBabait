@@ -1,0 +1,38 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#022F39;
+  max-height: 8rem;
+}
+.logo img {
+  width: 25rem;
+  height: 8rem;
+  left: 0rem; 
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  left: 70rem; 
+  top: 2rem; 
+}
+
+nav li {
+  margin-right: 3rem; 
+}
+
+.PrivateAreaButton{
+  background: none;
+  border-radius: 5rem;
+  position: fixed;
+  left: 42rem; 
+  top: 2rem; 
+
+  width: 15rem;
+  height: 3.5rem;
+  border-color: white;
+}

@@ -1,42 +1,69 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
-import { MaterialModule } from './material.module';
-
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
-import { BrideJewleryComponent } from './components/brides/bride-details/bride-jewlery/bride-jewlery.component';
-import { DebtComponent } from './components/brides/bride-details/debt/debt.component';
-import { BrideMoreDetailsComponent } from './components/brides/bride-details/bride-more-details/bride-more-details.component';
 import { HttpClientModule } from '@angular/common/http';
-import { NewJewleryComponent } from './components/brides/bride-details/new-jewlery/new-jewlery.component';
-import { BridesListComponent } from './components/brides/brides-list/brides-list.component';
+
+import { AppComponent } from './app.component';
+import { HeaderComponent } from "./components/header/header.component";
+import { AdvertisingComponent } from "./components/advertising/advertising.component";
+import { AboutComponent } from "./components/about/about.component";
+import { DonateButtonComponent } from "./components/donate-button/donate-button.component";
+import { FooterComponent } from "./components/footer/footer.component";
+import { ListOfActivitiesComponent } from './components/list-of-activities/list-of-activities.component';
+import { WeNumbersComponent } from "./components/we-numbers/we-numbers.component";
+import { ContactComponent } from "./components/contact/contact.component";
+import { TheySayAboutUsComponent } from './components/they-say-about-us/they-say-about-us.component';
 
 
-
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatTableModule } from '@angular/material/table';
 @NgModule({
-  declarations: [
-    AppComponent,
-    ConfirmDialogComponent,
-    BrideJewleryComponent,
-    DebtComponent,
-    BrideMoreDetailsComponent,
-    NewJewleryComponent,
-    BridesListComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MaterialModule,
-    HttpClientModule,
-    FormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        AdvertisingComponent,
+        AboutComponent,
+        DonateButtonComponent,
+        FooterComponent,
+        ListOfActivitiesComponent,
+        WeNumbersComponent,
+        ContactComponent,
+        TheySayAboutUsComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        HttpClientModule,
+        FormsModule,
+        MatButtonModule,
+        MatIconModule,
+        MatDialogModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatSelectModule,
+        MatChipsModule,
+        MatGridListModule,
+        MatToolbarModule,
+        MatListModule,
+        MatNativeDateModule,
+        MatDatepickerModule,
+        MatTableModule,
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
-export class AppModule {
- }
+export class AppModule {}

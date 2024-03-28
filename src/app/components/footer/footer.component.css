@@ -1,0 +1,96 @@
+footer{
+    display: flex;
+    background-color: #BB7E2B; 
+    justify-content: space-between;
+}
+.getUpdates{
+    display: block;
+    border-radius: 5rem;
+    padding-left:  120px;
+      margin-right: auto;
+margin-top: 0rem;
+
+background: none;
+
+    
+}
+#toDonate{
+    text-decoration: underline; 
+  text-decoration-color: #022F39; 
+  text-decoration-style:  solid ; 
+}
+.userInformation{
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+input {
+    /* margin: 5px 0;
+    padding: 5px; */
+    
+    width: 40rem;
+    height: 4.5rem;
+    background: none;
+    border-radius:5rem;
+    color: #ffffff;
+    border-color: #022F39;
+    left: 10rem;
+    margin-top: 1rem;
+
+}
+button{
+    margin: 5px 0;
+    padding: 5px;
+    margin-top: 2rem;
+    /* margin-right: 24rem; */
+    background-color:#022F39;
+    border-radius:5rem;
+    width: 15rem; 
+}
+
+label{
+  font-size: 4rem;
+  color: #022F39;
+  margin-right: 1rem;
+}
+.sentence {
+  display: inline-block;
+  margin-right: 3rem; /* יצר מרווח בין המשפט לבין הריבוע */
+ 
+  margin-top: 1rem;
+}
+
+.checkbox {
+
+
+  display: inline-block;
+  margin-top: -3rem;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #022F39; /* סגר את הקישור עבור סגירת הריבוע */
+  text-align: center; /* מרכז את ה-V בתוך הריבוע */
+  cursor: pointer; /* הפניות עכבר */
+}
+nav ul {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    list-style-type: none;
+    margin-top: 12rem;
+    right: 20rem;
+    padding: 0;
+    /* left: 70rem; 
+    top: 2rem;  */
+  }
+  
+  nav li {
+    margin-right: 9rem; 
+    margin-top: 2rem;
+
+  }
+
+  
