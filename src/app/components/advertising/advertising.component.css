@@ -3,6 +3,7 @@
     width: 100%;
     opacity: 40%;
     background-image: url("../../../assets/photoes/rav shalom.png");
+    background-size: cover;
 }
 .title{
     margin-top: 20rem;

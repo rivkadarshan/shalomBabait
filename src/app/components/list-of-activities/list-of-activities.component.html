@@ -1,8 +1,11 @@
-<h1>fadjfhj</h1>
-<div *NgFor="let a of activitiesList">
-    <a href={{a.linkToActivity}}>
-        <img src={{a.urlImage}} alt="תמונה">
-        <h2>{{a.titleActivities}}</h2>
-    </a>
+<div class="ListOfActivitiesComponent">
+<label class="title">|המומלצים שלנו  </label>
+<div class="cardsList">
+<div *ngFor="let activity of activitiesList" class="card">
+  <a [href]="activity.activitiesLink" class="card-link">
+    <img [src]="activity.urlImage" class="card-img-top" alt="Activity Image">
+    <h5 class="card-title">{{ activity.titleActivities }}</h5>
+  </a>
 </div>
-
+</div>
+</div>

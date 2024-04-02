@@ -9,3 +9,13 @@
   height: 100% ;/* גובה המסך פחות 8 רמ */
   width: 100%;
 }
+.scrollToTopButton{
+  background-color:#BB7E2B ;
+  border-radius: 3rem;
+  margin-right: 20rem;
+  transform: translateY(50%);
+  border-color: #022F39 ;
+  width: 5rem;
+  height: 5rem;
+  color:#022F39
+}

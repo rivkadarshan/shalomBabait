@@ -1,5 +1,5 @@
 <footer>
-  <nav> 
+  <div>
       <ul>
         <li><a href="#">קביעת יעוץ</a></li>
         <li><a href="#">אזור אישי</a></li>
@@ -8,34 +8,26 @@
         <li><a href="#">רכישת ספרים</a></li>
         <li><a href="#">צור קשר</a></li>
       </ul>
-    </nav>
-    <nav> 
-      <ul>
-        <li><a href="#" id="toDonate">לתרומות </a></li>
-        <li><a href="#">נגישות</a></li>
-      </ul>
-    </nav>
-    <div>
-      <h1></h1>
     </div>
-    <!-- <img src="../../../assets/photoes/LOGO.png" alt="לוגו"> -->
-
-    <div class="getUpdates">
-     
+    <div>
+      <ul>
+      <li><mat-icon>phone</mat-icon>  054-85-543-10</li>
+      <li><mat-icon>mail_outline</mat-icon>  a0548554310@gmail.com</li>
+      <li><mat-icon>chat_bubble_outline</mat-icon>  073-38-39-179</li>
+      <li><a href="#" id="toDonate">לתרומות </a></li>
+      <li><a href="#">נגישות</a></li>
+      </ul>
+    </div>
+    <div class="getUpdates">   
     <div class="userInformation">
-      <label>רוצים להיות מעודכנים?</label>
-      <br>
-      <input placeholder="שם">
-      <br>
-      <input placeholder="מייל">
-      <br>
+      <label class="WantToBeUpdatedTitele">רוצים להיות מעודכנים?</label>
+      <input type="text" placeholder="שם">
+      <input type="text" placeholder="מייל">      
+      <input type="text" placeholder="טלפון">
+      <label>אני מאשר קבלת עידכונים ותכנים של שלום בבי<input type="checkbox">ת</label>
       
-      <input placeholder="טלפון">
-      <p class="sentence">{{ sentence }}</p>
-      <div class="checkbox" (click)="toggleChecked()">{{ checked ? 'V' : '' }}</div>
-    
-      
-      <button type="submit">שלח</button>
+      <!-- <div class="checkbox" (click)="toggleChecked()">{{ checked ? 'V' : '' }}</div>      -->
+      <button class="submitButton" type="submit">שלח</button>
   </div>
 </div>
 </footer>

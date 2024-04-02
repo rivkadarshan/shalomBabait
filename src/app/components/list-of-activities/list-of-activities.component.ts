@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Activities } from '../../classes/activities';
 
 @Component({
@@ -8,8 +8,6 @@ import { Activities } from '../../classes/activities';
 })
 export class ListOfActivitiesComponent {
  
-  public activitiesList: Activities[] = [{activitiesId:0,urlImage:"",activitiesLink:"https://material.angular.io/guide/getting-started",titleActivities:"כנס ניסן"}];
-  ngOnInit():void{
+  @Input() activitiesList: Activities[] = [];
 
-  }
 }
