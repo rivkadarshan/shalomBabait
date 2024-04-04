@@ -1,8 +1,25 @@
 <div class="contact">
       <ul>
-        <li><mat-icon>phone</mat-icon></li>
-        <li><mat-icon>mail_outline</mat-icon></li>
-        <li><mat-icon>chat_bubble_outline</mat-icon></li>
+        <li>
+          <a href="#" (mouseover)="showPhoneInfo()" (mouseout)="hidePhoneInfo()">
+            <mat-icon class="icon-phone">phone</mat-icon>
+          </a>
+          <div class="contact-info phone-info" *ngIf="showPhone" id="phoneInfo">0548554310</div>
+        </li>
+    
+        <li>
+          <a href="#" (mouseover)="showEmailInfo()" (mouseout)="hideEmailInfo()">
+            <mat-icon class="icon-email">mail_outline</mat-icon>
+          </a>
+          <div class="contact-info email-info" *ngIf="showEmail" id="emailInfo">a0548554310@gmail.com</div>
+        </li>
+    
+        <li>
+          <a href="#" (mouseover)="showWhatsappInfo()" (mouseout)="hideWhatsappInfo()">
+            <mat-icon class="icon-whatsapp">chat_bubble_outline</mat-icon>
+          </a>
+          <div class="contact-info whatsapp-info" *ngIf="showWhatsapp" id="whatsappInfo">0733839179</div>
+        </li>
       </ul>
-</div>
-  
+    </div>
+    

@@ -30,6 +30,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatTableModule } from '@angular/material/table';
+import { ContentComponent } from './components/content/content.component';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -41,7 +43,8 @@ import { MatTableModule } from '@angular/material/table';
         ListOfActivitiesComponent,
         WeNumbersComponent,
         ContactComponent,
-        TheySayAboutUsComponent
+        TheySayAboutUsComponent,
+        ContentComponent,
     ],
     imports: [
         BrowserModule,
