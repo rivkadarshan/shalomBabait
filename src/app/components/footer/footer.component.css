@@ -55,5 +55,9 @@ ul {
     margin-right: 9rem; 
     margin-top: 2rem;
   }
+  .WantToBeUpdatedTiteleInput::placeholder{
+     color: white;
+     padding: 1rem;
+  }
 
   

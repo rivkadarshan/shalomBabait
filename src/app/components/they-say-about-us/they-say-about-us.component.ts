@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class TheySayAboutUsComponent {
   displayedIndexes: number[] = [];
   cards = [
-    { id: 1, title: "לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי סחטיר בלובק.  תצטנפל בלינדו למרקל אס לכימפו, דול,  צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש.  קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן.צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש.קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן.צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש. קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן",name:"ישראל ישראלי" },
+    { id: 1, title: "לחנות למוצרי תינוקות בלי בייבי עם ניסיון של למעלה מ-20 שנה בתעשייה תהיה כנראה מוניטין חזק של מוצרים איכותיים ושירות לקוחות מעולה. לאחר שהוקמה במשך שני עשורים, לחנות כזו תהיה הבנה עמוקה של צרכי ההורים והמטפלים, כמו גם את המגמות המתפתחות בשוק מוצרי התינוקות.",name:"ישראל ישראלי" },
     { id: 2, title: "לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי סחטיר בלובק.  תצטנפל בלינדו למרקל אס לכימפו, דול,  צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש.  קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן.צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש.קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן.צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש. קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן",name:"ישראל ישראלי" },
     { id: 3, title: "לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי סחטיר בלובק.  תצטנפל בלינדו למרקל אס לכימפו, דול,  צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש.  קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן.צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש.קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן.צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש. קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן",name:"ישראל ישראלי"},
     { id: 4, title: "לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי סחטיר בלובק.  תצטנפל בלינדו למרקל אס לכימפו, דול,  צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש.  קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן.צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש.קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן.צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש. קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן",name:"ישראל ישראלי" },
@@ -18,55 +18,53 @@ export class TheySayAboutUsComponent {
     { id: 7, title: "לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי סחטיר בלובק.  תצטנפל בלינדו למרקל אס לכימפו, דול,  צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש.  קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן.צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש.קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן.צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש. קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן",name:"ישראל ישראלי" },
   ];
 
-  displayedCards: { id: number, title: string, name: string }[] = [];
-  currentIndex = 0;
-  intervalId: any;
-
-  ngOnInit() {
-    this.showNextCards(true);
-  }
-
-  showNextCards(automatic: boolean) {
-    const startIndex = this.currentIndex;
-    this.displayedCards = this.cards.slice(startIndex, startIndex + 3);
-    this.displayedIndexes = [startIndex, startIndex + 1, startIndex + 2];
+    displayedCards: { id: number, title: string, name: string }[] = [];
+    currentIndex = 0;
+    intervalId: any;
   
-    if (automatic) {
-      this.intervalId = setTimeout(() => {
-        this.currentIndex += 3;
-        if (this.currentIndex >= this.cards.length) {
-          this.currentIndex = 0;
-        }
-        this.showNextCards(true);
-      }, 3000); // גלילה אוטומטית כל 3 שניות
+    ngOnInit() {
+      this.intervalId = setInterval(() => {
+        this.showNextCards();
+      }, 1500);
     }
-  }
-  stopAutoScroll() {
-    if (this.intervalId) {
+  
+    ngOnDestroy() {
       clearInterval(this.intervalId);
-      this.intervalId = null;
     }
-  }
-  prevCards() {
-    this.stopAutoScroll();
-    this.currentIndex -= 3;
-    if (this.currentIndex < 0) {
-      this.currentIndex = this.cards.length - 3;
-    }
-    this.showNextCards(false);
-  }
-  nextCards() {
-    this.stopAutoScroll();
-    this.currentIndex += 3;
-    if (this.currentIndex >= this.cards.length) {
-      this.currentIndex = 0;
-    }
-    this.showNextCards(false);
-  }
-  goToCard(index: number) {
-    this.stopAutoScroll();
-    this.currentIndex = index;
-    this.showNextCards(false);
-  }
   
-}
+    showNextCards() {
+      this.displayedCards = [];
+      for (let i = 0; i < 3; i++) {
+        const index = (this.currentIndex + i) % this.cards.length;
+        this.displayedCards.push(this.cards[index]);
+      }
+      this.currentIndex = (this.currentIndex + 1) % this.cards.length;
+    }
+  
+    prevCards() {
+      this.currentIndex = (this.currentIndex - 1 + this.cards.length) % this.cards.length;
+      this.displayedCards = [];
+      for (let i = 0; i < 3; i++) {
+        const index = (this.currentIndex + i) % this.cards.length;
+        this.displayedCards.push(this.cards[index]);
+      }
+    }
+  
+    nextCards() {
+      this.displayedCards = [];
+      for (let i = 0; i < 3; i++) {
+        const index = (this.currentIndex + i + 1) % this.cards.length;
+        this.displayedCards.push(this.cards[index]);
+      }
+      this.currentIndex = (this.currentIndex + 1) % this.cards.length;
+    }
+  
+    goToCard(index: number) {
+      this.currentIndex = index;
+      this.displayedCards = [];
+      for (let i = 0; i < 3; i++) {
+        const idx = (this.currentIndex + i) % this.cards.length;
+        this.displayedCards.push(this.cards[idx]);
+      }
+    }
+  }

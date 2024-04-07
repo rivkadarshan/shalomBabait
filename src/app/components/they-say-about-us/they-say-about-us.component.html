@@ -1,16 +1,16 @@
+
 <div class="TheySayAboutUsComponent">
   <label class="title">מה אומרים עלינו |</label>
   <div class="card-row">
-    <div class="card" *ngFor="let card of displayedCards">
-      <h3>{{card.id}}</h3>
-      <h3>{{card.title}}</h3>
-      <h3 class="name">{{card.name}}</h3>
+    <div class="card-container">
+      <div class="card" *ngFor="let card of displayedCards; let i = index" [ngClass]="{ 'active': i === 1, 'hidden-left': i === 0, 'hidden-right': i === 2 }">
+        <h3>🩵</h3>
+        <h3>{{card.title}}</h3>
+        <h3 class="name">{{card.name}}</h3>
+      </div>
     </div>
   </div>
   <div class="circles-container"> 
-    <button class="circle" (click)="prevCards()">❮</button>
-    <button class="circle" *ngFor="let card of cards; let i = index" [ngClass]="{ 'active': displayedIndexes.includes(currentIndex + i) }" (click)="goToCard(currentIndex + i)">{{currentIndex + i + 1}}</button>
-    <button class="circle" (click)="nextCards()">❯</button>
+    <button class="circle" *ngFor="let card of cards; let i = index" [ngClass]="{ 'circle-active': currentIndex === i ||currentIndex === i+1||currentIndex === i-1 }" (click)="goToCard(i)"></button>
   </div>
 </div>
-

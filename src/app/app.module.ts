@@ -30,6 +30,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatTableModule } from '@angular/material/table';
+import { LinkContentComponent } from './components/link-content/link-content.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -41,7 +42,8 @@ import { MatTableModule } from '@angular/material/table';
         ListOfActivitiesComponent,
         WeNumbersComponent,
         ContactComponent,
-        TheySayAboutUsComponent
+        TheySayAboutUsComponent,
+        LinkContentComponent
     ],
     imports: [
         BrowserModule,

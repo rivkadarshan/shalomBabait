@@ -1,40 +1,6 @@
-.TheySayAboutUsComponent {
-  display: flex;
-  flex-direction: column;
-  padding: 5rem;
-}
-
-.content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.card-row {
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-}
-
-.card {
-  flex: 0 0 calc(33.33% - 20px);
-  margin: 10px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  cursor: pointer;
-  background-color: white;
-  color: #BB7E2B;
-  max-width: 40rem;
-  min-width: 40rem;
-  text-align: center;
-  border-radius: 2rem;
-}
-
 .circles-container {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
 }
 
 .circle {
@@ -48,12 +14,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
-.circle.active {
+.circle-active {
   background-color: #BB7E2B;
-  color: white;
+  border: 0.005rem solid white;
+
 }
-.name{
+
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: white;
+  color: #BB7E2B;
+  text-align: center;
+  border-radius: 2rem;
+  width: 45rem;
+  height: 45rem;
+  margin: 5vw;
+}
+
+.name {
   color: #022F39;
+}
+.TheySayAboutUsComponent{
+  padding: 7rem;
 }
