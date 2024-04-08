@@ -5,10 +5,10 @@
 
 .circle {
   margin: 0 0.2rem;
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
-  border: 1px solid #BB7E2B;
+  border: none;
   color: #BB7E2B;
   background-color: white;
   display: flex;
@@ -19,8 +19,7 @@
 
 .circle-active {
   background-color: #BB7E2B;
-  border: 0.005rem solid white;
-
+  border: none;
 }
 
 .card-container {

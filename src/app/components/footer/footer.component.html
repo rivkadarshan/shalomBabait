@@ -1,4 +1,4 @@
-<footer>
+<!-- <footer>
   <div>
       <ul>
         <li><a href="#">קביעת יעוץ</a></li>
@@ -18,14 +18,58 @@
       <li><a href="#">נגישות</a></li>
       </ul>
     </div>
-    <div class="getUpdates">   
-    <div class="userInformation">
-      <label class="WantToBeUpdatedTitele">רוצים להיות מעודכנים?</label>
-      <input class="WantToBeUpdatedTiteleInput" type="text" placeholder="שם">
-      <input class="WantToBeUpdatedTiteleInput" type="text" placeholder="מייל">      
-      <input class="WantToBeUpdatedTiteleInput" type="text" placeholder="טלפון">
-      <label>אני מאשר קבלת עידכונים ותכנים של שלום בבי<input type="checkbox">ת</label>      
-      <button class="submitButton" type="submit">שלח</button>
+<form class="getUpdates" (ngSubmit)="sendEmail()" #emailForm="ngForm">
+  <div class="userInformation">
+    <label class="WantToBeUpdatedTitele">רוצים להיות מעודכנים?</label>
+    <input class="WantToBeUpdatedTiteleInput" type="text" name="name" [(ngModel)]="formData.name" placeholder="שם" required>
+    <input class="WantToBeUpdatedTiteleInput" type="email" name="email" [(ngModel)]="formData.email" placeholder="מייל" required>
+    <input class="WantToBeUpdatedTiteleInput" type="tel" name="phone" [(ngModel)]="formData.phone" placeholder="טלפון" required>
+    <label><input type="checkbox" name="agree" [(ngModel)]="formData.agree" required>אני מאשר קבלת עידכונים ותכנים של שלום בבית</label>
+    <button class="submitButton" type="submit" [disabled]="emailForm.invalid">שלח</button>
   </div>
-</div>
+</form>
+</footer> -->
+<footer>
+  <div>
+    <ul>
+      <li><a href="#">קביעת יעוץ</a></li>
+      <li><a href="#">אזור אישי</a></li>
+      <li><a href="#">הדרכת חתנים</a></li>
+      <li><a href="#">הרשמה לסדרה</a></li>
+      <li><a href="#">רכישת ספרים</a></li>
+      <li><a href="#">צור קשר</a></li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li><mat-icon>phone</mat-icon> 054-85-543-10</li>
+      <li><mat-icon>mail_outline</mat-icon> a0548554310@gmail.com</li>
+      <li><mat-icon>chat_bubble_outline</mat-icon> 073-38-39-179</li>
+      <li><a href="https://www.matara.pro/nedarimplus/online/?mosad=7005723" id="toDonate">לתרומות</a></li>
+      <li><a href="#">נגישות</a></li>
+    </ul>
+  </div>
+  <div>
+    <form class="getUpdates" (ngSubmit)="sendEmail()" #emailForm="ngForm">
+      <div class="userInformation">
+        <label class="WantToBeUpdatedTitele">רוצים להיות מעודכנים?</label>
+        <input class="WantToBeUpdatedTiteleInput" type="text" name="name" [(ngModel)]="formData.name" placeholder="שם" required>
+        <input class="WantToBeUpdatedTiteleInput" type="email" name="email" [(ngModel)]="formData.email" placeholder="מייל" required>
+        <input class="WantToBeUpdatedTiteleInput" type="tel" name="phone" [(ngModel)]="formData.phone" placeholder="טלפון" required>
+        <!-- <label>
+          <button class="custom-checkbox" (click)="toggleAgree()" [ngClass]="{'checked': formData.agree}">
+            <span *ngIf="formData.agree" class="tick">V</span>
+          </button>
+          אני מאשר קבלת עידכונים ותכנים של שלום בבית
+        </label>         -->
+        <button class="custom-checkbox" (click)="toggleAgree()" [ngClass]="{'checked': formData.agree}">
+          <span *ngIf="formData.agree" class="tick">V</span>
+        </button>
+        <label (click)="toggleAgree()">אני מאשר קבלת עידכונים ותכנים של שלום בבית</label>
+        
+        
+        <button class="submitButton" type="submit" [disabled]="emailForm.invalid">שלח</button>
+      </div>
+    </form>
+  </div>
 </footer>

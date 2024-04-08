@@ -8,9 +8,10 @@
 
 .weNumbersComponent > div {
     width: 100%; 
-    color: #022F39;
+    color: #074B5B;
 }
 .number{
     display: block;
     font-size: 8rem;
+    font-family: "Assistant", sans-serif;
 }

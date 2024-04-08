@@ -1,7 +1,7 @@
 
   img{
-    min-width: 45rem;
-    min-height: 45rem;
+    width: 70rem;
+    height: 70rem;
     border-radius: 4rem;
   }
   .abautComponent{
@@ -10,8 +10,14 @@
     height: calc(100vh + 8rem); 
     width: 100%;
     align-items: center;
+    justify-content: space-around;
+    /* text-align: right; */
   }
  .LetterAboutShalomBabit
  {
     display: ruby;
+ }
+ .aaa{
+  width: 50rem;
+  text-align: right;
  }

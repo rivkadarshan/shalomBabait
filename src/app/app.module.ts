@@ -31,6 +31,8 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatTableModule } from '@angular/material/table';
 import { LinkContentComponent } from './components/link-content/link-content.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -64,6 +66,7 @@ import { LinkContentComponent } from './components/link-content/link-content.com
         MatNativeDateModule,
         MatDatepickerModule,
         MatTableModule,
+        MatCheckboxModule
     ],
     providers: [],
     bootstrap: [AppComponent]
