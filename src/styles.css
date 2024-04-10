@@ -17,13 +17,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
    border-radius: 0rem 5.3rem 0rem 0rem;
    height: 8rem;
    width: 32rem;
+   font-size: large
  }
  a {
   color: white;
+  font-size: large;
 }
 
 a:hover {
   text-decoration: none;
-  /* font-weight: bold; */
   color: white;
+  font-size: large;
 }

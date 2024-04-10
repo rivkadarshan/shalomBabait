@@ -17,8 +17,7 @@ nav ul {
   margin: 0;
   padding: 0;
   position: fixed;
-  left: 70rem; 
-  top: 2rem; 
+  top: 2.9rem; 
 }
 
 nav li {
@@ -31,8 +30,11 @@ nav li {
   position: fixed;
   left: 42rem; 
   top: 2rem; 
-
-  width: 15rem;
-  height: 3.5rem;
-  border-color: white;
+  width: 10%;
+  height: 4rem;
+  border: 0.2rem solid white;
+  font-size: large;
+}
+.links{
+  width: 40%;
 }
