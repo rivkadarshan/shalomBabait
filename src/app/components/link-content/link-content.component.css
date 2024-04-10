@@ -1,7 +1,9 @@
-.button-grid {
-    display: inline;
+.linkContentComponent{
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    height: calc(100vh); 
+    width: 100%;
+    align-items: center;
 }
 
 .square-button {
@@ -21,15 +23,15 @@
 }
 
 .square-button:hover {
-    transform: scale(1.1, 1.1);
+    transform: scale(1.01, 1.01);
 }
 
 .button-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     background: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;

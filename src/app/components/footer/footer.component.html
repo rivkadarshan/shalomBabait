@@ -56,12 +56,6 @@
         <input class="WantToBeUpdatedTiteleInput" type="text" name="name" [(ngModel)]="formData.name" placeholder="שם" required>
         <input class="WantToBeUpdatedTiteleInput" type="email" name="email" [(ngModel)]="formData.email" placeholder="מייל" required>
         <input class="WantToBeUpdatedTiteleInput" type="tel" name="phone" [(ngModel)]="formData.phone" placeholder="טלפון" required>
-        <!-- <label>
-          <button class="custom-checkbox" (click)="toggleAgree()" [ngClass]="{'checked': formData.agree}">
-            <span *ngIf="formData.agree" class="tick">V</span>
-          </button>
-          אני מאשר קבלת עידכונים ותכנים של שלום בבית
-        </label>         -->
         <button class="custom-checkbox" (click)="toggleAgree()" [ngClass]="{'checked': formData.agree}">
           <span *ngIf="formData.agree" class="tick">V</span>
         </button>
