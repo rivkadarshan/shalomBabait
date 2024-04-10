@@ -11,13 +11,15 @@
     width: 100%;
     align-items: center;
     justify-content: space-around;
-    /* text-align: right; */
+    font-family: 'Noto Sans Hebrew', sans-serif;
   }
- .LetterAboutShalomBabit
- {
-    display: ruby;
- }
  .aaa{
   width: 50rem;
   text-align: right;
  }
+ .LetterAboutShalomBabit li::marker {
+  content: none; /* מסתיר את הנקודה לפני כל פריט ברשימה */
+}
+.LetterAboutShalomBabit {
+  font-family: 'Noto Sans Hebrew', sans-serif; 
+}
