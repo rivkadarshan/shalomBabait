@@ -29,3 +29,50 @@ a:hover {
   color: white;
   font-size: large;
 }
+
+/* כרטיסים */
+.card{
+  width: 32rem;
+  height: 35rem;
+  background-color: #074B5B;
+  display: inline-block;
+  margin: 2rem;
+  border-radius: 2rem;
+}
+.card-img-top {
+  width: 32rem;
+  height: 28rem;
+  border-radius: 2rem 2rem 0 0;
+}
+.cardsList{
+  padding: 5rem;
+  text-align: center;
+}
+.card-title{
+  text-align: center;
+  font-size: 1.5rem;
+  height: 4rem;
+  padding: 1.5rem;
+}
+/* אינפוטים */
+.WantToBeUpdatedTiteleInput{
+  width: 40rem;
+  height: 4.5rem;
+  background: none;
+  border-radius:5rem;
+  color: #ffffff;
+  border: 0.2rem solid #022F39; 
+  left: 10rem;
+  margin-top: 1rem;
+}
+  .WantToBeUpdatedTiteleInput::placeholder{
+     color: white;
+     padding: 1rem;
+  }
+  /* כפתור שליחת הודעה */
+  .submitButton{
+    background-color:#022F39;
+    border-radius:5rem;
+    width: 15rem; 
+    direction: rtl;
+}

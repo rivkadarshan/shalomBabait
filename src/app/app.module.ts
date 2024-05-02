@@ -32,6 +32,9 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatTableModule } from '@angular/material/table';
 import { LinkContentComponent } from './components/link-content/link-content.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { SignUpForCourseComponent } from './components/pages/sign-up-for-course/sign-up-for-course.component';
+import { HomeComponent } from './components/home/home.component';
+import { DetilsContactComponent } from './components/detils-contact/detils-contact.component';
 
 @NgModule({
     declarations: [
@@ -45,7 +48,10 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
         WeNumbersComponent,
         ContactComponent,
         TheySayAboutUsComponent,
-        LinkContentComponent
+        LinkContentComponent,
+        SignUpForCourseComponent,
+        HomeComponent,
+        DetilsContactComponent
     ],
     imports: [
         BrowserModule,

@@ -18,6 +18,8 @@ export class FooterComponent {
   constructor(private emailService: EmailService) {}
 
   sendEmail() {
+    debugger
+    alert("dfajf")
     this.emailService.sendEmail(this.formData).subscribe(
       () => {
         alert('המייל נשלח בהצלחה!');

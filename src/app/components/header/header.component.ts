@@ -1,4 +1,4 @@
-import { Component, ElementRef } from '@angular/core';
+import { Component, ElementRef, EventEmitter, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,17 +6,10 @@ import { Router } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent {
-  constructor(private router: Router, private elRef: ElementRef) { }
+export class HeaderComponent{
+  scrollToTop() {
 
-  goToAbout() {
-     alert("about");
-    const aboutElement = this.elRef.nativeElement.querySelector('app-about');
-    if (aboutElement) {
-      aboutElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    } else {
-      this.router.navigate(['/about']); // ניתוב רגיל במקרה של אי מציאת קומפוננטת about
-    }
+    window.scrollTo( 0, window.innerHeight);
   }
-
 }
+
