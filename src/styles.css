@@ -76,3 +76,14 @@ a:hover {
     width: 15rem; 
     direction: rtl;
 }
+/* כפתור גלילה לראש העמוד */
+.scrollToTopButton {
+  background-color: #BB7E2B;
+  border-radius: 3rem;
+  margin-right: 20rem;
+  transform: translateY(50%);
+  width: 5rem;
+  height: 5rem;
+  color: #022F39;
+  border: 0.2rem solid #022F39; 
+}

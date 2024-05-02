@@ -7,8 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent{
-  scrollToTop() {
-
+  scrollToAbout() {
     window.scrollTo( 0, window.innerHeight);
   }
 }
