@@ -9,10 +9,10 @@ import { Activities } from 'src/app/classes/activities';
 export class HomeComponent {
   title = 'שלום בבית';
   activitiesList: Activities[] = [
-    {activitiesId:0,urlImage:"../../../assets/photoes/rav shalom for abaut component.png",activitiesLink:"",titleActivities:"כנס ניסן"},
-    {activitiesId:0,urlImage:"../../../assets/photoes/rav shalom for abaut component.png",activitiesLink:"",titleActivities:"סדרה בבית שמש"},
-    {activitiesId:0,urlImage:"../../../assets/photoes/rav shalom for abaut component.png",activitiesLink:"",titleActivities:"סדרה ברכסים"},
-    {activitiesId:0,urlImage:"../../../assets/photoes/rav shalom for abaut component.png",activitiesLink:"",titleActivities:"סדרה בירושלים"}
+    {activitiesId:0,urlImage:"../../../assets/photoes/Ad for the Beit Shemesh series.jpg",activitiesLink:"",titleActivities:"סדרה בבית שמש"},
+    {activitiesId:0,urlImage:"../../../assets/photoes/Rabbi Silver's email series.jpg",activitiesLink:"",titleActivities:"כנס ניסן"},
+    {activitiesId:0,urlImage:"../../../assets/photoes/shalom babit page sofi.jpg",activitiesLink:"",titleActivities:"סדרה ברכסים"},
+    {activitiesId:0,urlImage:"../../../assets/photoes/shlom babit page.jpg",activitiesLink:"",titleActivities:"סדרה בירושלים"}
   ]; 
    constructor(private elementRef: ElementRef) { }
    scrollToTop(): void {
