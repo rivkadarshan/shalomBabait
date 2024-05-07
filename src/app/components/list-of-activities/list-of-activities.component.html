@@ -2,7 +2,11 @@
 <label class="title">|המומלצים שלנו  </label>
 <div class="cardsList">
 <div *ngFor="let activity of activitiesList" class="card">
-  <a [href]="activity.activitiesLink" class="card-link">
+  <!-- <a [href]="activity.activitiesLink" class="card-link">
+    <img [src]="activity.urlImage" class="card-img-top" alt="Activity Image">
+    <h5 class="card-title">{{ activity.titleActivities }}</h5>
+  </a> -->
+  <a href="javascript:void(0)" class="card-link" (click)="openDialog()">
     <img [src]="activity.urlImage" class="card-img-top" alt="Activity Image">
     <h5 class="card-title">{{ activity.titleActivities }}</h5>
   </a>

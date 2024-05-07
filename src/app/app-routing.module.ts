@@ -4,12 +4,13 @@ import { Activities } from './classes/activities';
 import {SignUpForCourseComponent} from '././components/pages/sign-up-for-course/sign-up-for-course.component';
 import { HomeComponent } from './components/home/home.component';
 import { DetilsContactComponent } from './components/detils-contact/detils-contact.component';
-
+import { RegistrationFormComponent } from './components/registration-form/registration-form.component';
 const routes: Routes = 
 [
   { path: '', component: HomeComponent },
   { path: 'SignUpForCourse', component: SignUpForCourseComponent },
   { path: 'contact', component: DetilsContactComponent },
+  { path: 'RegistrationForm', component: RegistrationFormComponent },
 ];
 
 @NgModule({

@@ -35,6 +35,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { SignUpForCourseComponent } from './components/pages/sign-up-for-course/sign-up-for-course.component';
 import { HomeComponent } from './components/home/home.component';
 import { DetilsContactComponent } from './components/detils-contact/detils-contact.component';
+import { RegistrationFormComponent } from './components/registration-form/registration-form.component';
 
 @NgModule({
     declarations: [
@@ -51,7 +52,8 @@ import { DetilsContactComponent } from './components/detils-contact/detils-conta
         LinkContentComponent,
         SignUpForCourseComponent,
         HomeComponent,
-        DetilsContactComponent
+        DetilsContactComponent,
+        RegistrationFormComponent
     ],
     imports: [
         BrowserModule,

@@ -1,0 +1,7 @@
+<form class="RegistrationForm"  #emailForm="ngForm">
+      <label >הרשמה לסדרה</label>
+      <input class="WantToBeUpdatedTiteleInput" type="text" name="name" placeholder="שם" required>
+      <input class="WantToBeUpdatedTiteleInput" type="email" name="email"  placeholder="מייל" required>
+      <input class="WantToBeUpdatedTiteleInput" type="tel" name="phone"  placeholder="טלפון" required>
+      <button class="submitButton" type="button"  [disabled]="emailForm.invalid">אישור</button>
+</form>
