@@ -36,6 +36,7 @@ import { SignUpForCourseComponent } from './components/pages/sign-up-for-course/
 import { HomeComponent } from './components/home/home.component';
 import { DetilsContactComponent } from './components/detils-contact/detils-contact.component';
 import { RegistrationFormComponent } from './components/registration-form/registration-form.component';
+import { LogInComponent } from './components/log-in/log-in.component';
 
 @NgModule({
     declarations: [
@@ -53,7 +54,8 @@ import { RegistrationFormComponent } from './components/registration-form/regist
         SignUpForCourseComponent,
         HomeComponent,
         DetilsContactComponent,
-        RegistrationFormComponent
+        RegistrationFormComponent,
+        LogInComponent
     ],
     imports: [
         BrowserModule,
