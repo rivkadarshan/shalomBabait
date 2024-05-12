@@ -6,7 +6,6 @@
         </a>
         <div class="contact-info phone-info" *ngIf="showPhone" id="phoneInfo">0548554310</div>
       </li>
-  
       <li>
         <a href="#" (mouseover)="showEmailInfo()" (mouseout)="hideEmailInfo()">
           <mat-icon class="icon-phone">mail_outline</mat-icon>
@@ -14,10 +13,10 @@
         <div class="contact-info email-info" *ngIf="showEmail" id="emailInfo">a0548554310@gmail.com</div>
       </li>
       <li>
-        <a  href="#" (mouseover)="showEmailInfo()" (mouseout)="hideEmailInfo()">
+        <a href="#" (mouseover)="showWhatsappInfo()" (mouseout)="hideWhatsappInfo()">
           <i class="fa-brands fa-whatsapp"></i>
         </a>
-        <div class="contact-info email-info" *ngIf="showEmail" id="emailInfo">0733839179</div>
+        <div class="contact-info whatsapp-info" *ngIf="showWhatsapp" id="whatsappInfo">0733839179</div>
       </li>
     </ul>
   </div>
