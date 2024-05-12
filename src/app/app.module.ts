@@ -76,7 +76,7 @@ import { LogInComponent } from './components/log-in/log-in.component';
         MatNativeDateModule,
         MatDatepickerModule,
         MatTableModule,
-        MatCheckboxModule
+        MatCheckboxModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

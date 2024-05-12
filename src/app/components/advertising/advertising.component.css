@@ -5,8 +5,7 @@
     background-size: cover;
 }
 .title{
-    /* text-align: right; */
-    font-size: 10rem;
+    font-size: 8rem;
     opacity:1;
     font-family:'Noto Sans Hebrew' ,sans-serif;
 }

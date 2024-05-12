@@ -1,4 +1,11 @@
 
+@font-face {
+  font-family: 'Noto Sans Hebrew';
+  src: url('../assets/fonts/noto-sans-hebrew.ttf') format('truetype');
+}
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+
 html, body {
   background-color:#022F39;
   color: white;
@@ -9,7 +16,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .title {
   color: #BB7E2B;
   font-size: 5rem; 
-  font-family: "Noto Sans Hebrew", sans-serif; 
+  font-family: 'Noto Sans Hebrew', sans-serif;
 }
 .consultationAppointmentButton{
    background-color: #BB7E2B;
@@ -64,6 +71,7 @@ a:hover {
   border: 0.2rem solid #022F39; 
   left: 10rem;
   margin-top: 1rem;
+  direction: rtl;
 }
   .WantToBeUpdatedTiteleInput::placeholder{
      color: white;
