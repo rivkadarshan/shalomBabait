@@ -44,10 +44,6 @@ a:hover {
   height: 28rem;
   border-radius: 2rem 2rem 0 0;
 }
-.cardsList{
-  padding: 5rem;
-  text-align: center;
-}
 .card-title{
   text-align: center;
   font-size: 1.5rem;
@@ -87,4 +83,8 @@ a:hover {
   height: 5rem;
   color: #022F39;
   border: 0.2rem solid #022F39; 
+}
+/* איקונים */
+.fa-whatsapp {
+  font-size: 2.7rem;
 }

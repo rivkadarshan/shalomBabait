@@ -47,6 +47,6 @@
   .icon-whatsapp:hover+.whatsapp-info {
     display: block;
   }
-  .fa-whatsapp {
+  /* .fa-whatsapp {
     font-size: 2.7rem;
-  }
+  } */
