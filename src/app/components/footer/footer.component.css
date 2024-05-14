@@ -2,11 +2,11 @@ footer {
   display: flex;
   background-color: #BB7E2B;
   justify-content: space-between;
-  padding: 0 10rem 0rem 10rem; 
-  padding-top: 0; 
+  border-radius: 3rem 3rem 0 0;
+  padding: 0 15% 0 15%;
 }
 #toDonate{
-    text-decoration: underline; 
+  text-decoration: underline; 
   text-decoration-color: #022F39; 
   text-decoration-style:  solid ; 
 }
@@ -18,20 +18,12 @@ footer {
     justify-content: center; 
 }
 
-input[type="tel"] {
-  direction: rtl;
-}
-
-/* .submitButton{
-    background-color:#022F39;
-    border-radius:5rem;
-    width: 15rem; 
-    direction: rtl;
-} */
 .WantToBeUpdatedTitele{
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #022F39;
   margin-right: 1rem;
+  font-weight: 900;
+  font-family: "Noto Sans Hebrew", sans-serif;
 }
 
 ul {

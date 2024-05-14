@@ -5,8 +5,8 @@
    height: 8rem;
    width: 32rem;
    position: absolute;
-
-   font-size: large;
    left: 0rem; 
    bottom: 0rem; 
+   font-weight: 700;
+   font-size: 2rem;
 }

@@ -12,7 +12,7 @@ export class WeNumbersComponent {
   subscription: Subscription | undefined;
 
   ngOnInit() {
-    const interval$ = interval(1); // אפשר לשנות את המהירות כרצונך
+    const interval$ = interval(0); // אפשר לשנות את המהירות כרצונך
 
     this.subscription = interval$
       .pipe(

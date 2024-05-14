@@ -38,6 +38,7 @@ nav li {
   height: 4rem;
   border: 0.2rem solid white;
   font-size: large;
+  font-weight: 700;
 }
 .buttonLink{
   width: 40%;

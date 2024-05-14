@@ -4,7 +4,7 @@
   <div class="card-row">
     <div class="card-container">
       <div class="card" *ngFor="let card of displayedCards; let i = index" [ngClass]="{ 'active': i === 1, 'hidden-left': i === 0, 'hidden-right': i === 2 }">
-        <h3>🩵</h3>
+        <img  class="profilePicture" src="../../../assets/photoes/person.png" alt="לוגו">
         <h3>{{card.title}}</h3>
         <h3 class="name">{{card.name}}</h3>
       </div>
