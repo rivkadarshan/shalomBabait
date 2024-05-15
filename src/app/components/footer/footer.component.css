@@ -3,16 +3,18 @@ footer {
   background-color: #BB7E2B;
   justify-content: space-between;
   border-radius: 3rem 3rem 0 0;
-  padding: 0 15% 0 15%;
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 10rem 15% 8rem 15%;
 }
-#toDonate{
-  text-decoration: underline; 
-  text-decoration-color: #022F39; 
-  text-decoration-style:  solid ; 
+#toDonate {
+  text-decoration: underline;
+  text-decoration-color: #022F39;
+  text-decoration-style: solid;
+  text-underline-offset: 0.3rem;  /* Adjust the value to set the desired distance */
 }
+
 .userInformation{
-    padding-top: 12rem;
-    padding-bottom: 12rem;
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -27,36 +29,46 @@ footer {
 }
 
 ul {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    list-style: none;
     list-style-type: none;
-    margin-top: 12rem;
-    right: 20rem;
-    padding: 0;
+    line-height: 4rem;
   }
   
- li {
-    margin-right: 9rem; 
-    margin-top: 2rem;
+  .footerIcon{
+    color: #022F39;
+    vertical-align: middle;
+    margin-left: 2rem;
   }
-  .custom-checkbox {
+
+li mat-icon,
+li .fa-brands {
+    position: absolute;
+    right: 0;
+}
+li {
+  display: flex;
+  align-items: center; /* יישור אנכי של הטקסט והאייקונים */
+  position: relative;
+  padding-right: 4rem; /* התאמת הריווח לפי הצורך */
+}
+
+  /* .custom-checkbox {
     width: 24px;
     height: 24px;
     border: 2px solid #000;
     background-color: #fff;
     cursor: pointer;
     position: relative;
-  }
+  } */
   
-  .tick {
+  /* .tick {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
-  }
+  } */
   
-  .checked .tick {
+  /* .checked .tick {
     display: block;
-  }
-  
+  } */
