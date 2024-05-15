@@ -1,9 +1,26 @@
 <div class="logInComponent">
-<img class="logo" src="../../../assets/photoes/shalom babait logo.png" alt="לוגו">
-<label class="WantToBeUpdatedTitele">כניסה לאזור האישי</label>
-<!-- <input class="WantToBeUpdatedTiteleInput" type="text" name="name" [(ngModel)]="" placeholder="הקלד מספר זהות" required>
-<button class="submitButton" type="button" [disabled]="emailForm.invalid">אישור</button> -->
-<input class="WantToBeUpdatedTiteleInput" type="text" name="name"  placeholder="הקלד מספר זהות" required>
-<input class="WantToBeUpdatedTiteleInput" type="password" name="name"  placeholder="הקלד סיסמה" required>
-<button class="submitButton" type="button">אישור</button>
+      <label class="dialogTitle" (click)="enrollmentFormDisplayed = !enrollmentFormDisplayed; loginFormDisplayed = true">התחברות</label>  
+      <label class="dialogTitle" (click)="loginFormDisplayed = !loginFormDisplayed; enrollmentFormDisplayed = true">הרשמה</label>
+    <div *ngIf="enrollmentFormDisplayed">
+        <div class="enrollment">
+        <input class="WantToBeUpdatedTiteleInput" type="text" name="firstName" placeholder="שם פרטי" required>
+        <input class="WantToBeUpdatedTiteleInput" type="text" name="lastName" placeholder="שם משפחה" required>
+        <input class="WantToBeUpdatedTiteleInput" type="text" name="id" placeholder="תז" required>
+        <input class="WantToBeUpdatedTiteleInput" type="text" name="phone" placeholder="טלפון" required>
+        <input class="WantToBeUpdatedTiteleInput" type="text" name="city" placeholder="עיר" required>
+        <input class="WantToBeUpdatedTiteleInput" type="text" name="address" placeholder="כתובת" required>
+        <input class="WantToBeUpdatedTiteleInput fullWidth" type="text" name="email" placeholder="מייל" required>
+        <input class="WantToBeUpdatedTiteleInput" type="password" name="password" placeholder="סיסמה" required>
+        <input class="WantToBeUpdatedTiteleInput" type="password" name="confirmPassword" placeholder="אימות סיסמה" required>
+        <label class="fullWidth" ><input type="checkbox" name="agree" required>אני מאשר קבלת עידכונים ותכנים של "שלום בבית"</label>
+        </div>
+    </div>
+    <div *ngIf="!enrollmentFormDisplayed && loginFormDisplayed">
+        <div class="connection">
+        <input class="WantToBeUpdatedTiteleInput" type="text" name="username" placeholder="שם משתמש" required>
+        <input class="WantToBeUpdatedTiteleInput" type="password" name="password" placeholder="סיסמה" required>
+        <a class="dialogTitle">?שכחתי סיסמה</a>
+        </div>
+    </div>
+    <button class="submitButton">כניסה</button>
 </div>

@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./log-in.component.css']
 })
 export class LogInComponent {
-
+  enrollmentFormDisplayed: boolean = true;
+  loginFormDisplayed: boolean = false;
 }

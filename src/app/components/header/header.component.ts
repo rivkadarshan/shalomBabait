@@ -13,7 +13,7 @@ export class HeaderComponent{
 
   openDialog() {
     const dialogRef = this.dialog.open(LogInComponent, {
-      // width: '250px', // ניתן להתאים את הרוחב והגובה לפי הצורך
+       width: '50rem',
     });
 alert
     dialogRef.afterClosed().subscribe(result => {
