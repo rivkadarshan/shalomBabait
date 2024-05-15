@@ -1,21 +1,23 @@
-.advertisingComponent{
-    height: calc(100vh); 
+.advertisingComponent {
+    height: calc(100vh - 8rem); 
     width: 100%;
     background-image: url("../../../assets/photoes/ravShalom.JPG");
     background-size: cover;
 }
 .title{
-    font-size: 8rem;
-    opacity:1;
+    font-size: 9rem;
+    opacity: 1;
     font-weight: 900;
+    line-height: 2.4rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 .aaaa{
-    padding: 40rem 35rem 0 0;
+    padding: 35rem 35rem 0 0;
     position: absolute;
     top: 8rem;
     left: 0;
     width: 100%;
-    height: 100%;
+    height:  calc(100vh - 8rem);
     background: rgba(7, 75, 91, 0.6);
     display: flex;
     opacity: 1;
