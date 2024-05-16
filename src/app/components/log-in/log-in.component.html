@@ -1,26 +1,36 @@
 <div class="logInComponent">
-      <label class="dialogTitle" (click)="enrollmentFormDisplayed = !enrollmentFormDisplayed; loginFormDisplayed = true">התחברות</label>  
-      <label class="dialogTitle" (click)="loginFormDisplayed = !loginFormDisplayed; enrollmentFormDisplayed = true">הרשמה</label>
+    <div class="titleContainer">
+        <label class="dialogTitle" [class.active]="enrollmentFormDisplayed" (click)="showEnrollmentForm()">הרשמה</label>
+        <label class="dialogTitle" [class.active]="connectionFormDisplayed" (click)="showConnectionForm()">התחברות</label>
+    </div>
     <div *ngIf="enrollmentFormDisplayed">
         <div class="enrollment">
-        <input class="WantToBeUpdatedTiteleInput" type="text" name="firstName" placeholder="שם פרטי" required>
-        <input class="WantToBeUpdatedTiteleInput" type="text" name="lastName" placeholder="שם משפחה" required>
-        <input class="WantToBeUpdatedTiteleInput" type="text" name="id" placeholder="תז" required>
-        <input class="WantToBeUpdatedTiteleInput" type="text" name="phone" placeholder="טלפון" required>
-        <input class="WantToBeUpdatedTiteleInput" type="text" name="city" placeholder="עיר" required>
-        <input class="WantToBeUpdatedTiteleInput" type="text" name="address" placeholder="כתובת" required>
-        <input class="WantToBeUpdatedTiteleInput fullWidth" type="text" name="email" placeholder="מייל" required>
-        <input class="WantToBeUpdatedTiteleInput" type="password" name="password" placeholder="סיסמה" required>
-        <input class="WantToBeUpdatedTiteleInput" type="password" name="confirmPassword" placeholder="אימות סיסמה" required>
-        <label class="fullWidth" ><input type="checkbox" name="agree" required>אני מאשר קבלת עידכונים ותכנים של "שלום בבית"</label>
+            <input class="WantToBeUpdatedTiteleInput" type="text" name="firstName" placeholder="*שם פרטי" required>
+            <input class="WantToBeUpdatedTiteleInput" type="text" name="lastName" placeholder="*שם משפחה" required>
+            <input class="WantToBeUpdatedTiteleInput" type="text" name="id" placeholder="תז">
+            <input class="WantToBeUpdatedTiteleInput" type="text" name="phone" placeholder="*טלפון" required>
+            <input class="WantToBeUpdatedTiteleInput" type="text" name="city" placeholder="*עיר" required>
+            <input class="WantToBeUpdatedTiteleInput" type="text" name="address" placeholder="כתובת">
+            <input class="WantToBeUpdatedTiteleInput fullWidth" type="text" name="email" placeholder="*מייל" required>
+            <input class="WantToBeUpdatedTiteleInput" type="password" name="password" placeholder="*סיסמה" required>
+            <input class="WantToBeUpdatedTiteleInput" type="password" name="confirmPassword" placeholder="*אימות סיסמה" required>
+            <label class="fullWidth"><input type="checkbox" name="agree" required>אני מאשר קבלת עידכונים ותכנים של "שלום בבית"</label>
         </div>
+        <button class="submitButton">כניסה</button>
     </div>
-    <div *ngIf="!enrollmentFormDisplayed && loginFormDisplayed">
+    <div *ngIf="connectionFormDisplayed">
         <div class="connection">
-        <input class="WantToBeUpdatedTiteleInput" type="text" name="username" placeholder="שם משתמש" required>
-        <input class="WantToBeUpdatedTiteleInput" type="password" name="password" placeholder="סיסמה" required>
-        <a class="dialogTitle">?שכחתי סיסמה</a>
+            <input class="WantToBeUpdatedTiteleInput" type="text" name="username" placeholder="שם משתמש" required>
+            <input class="WantToBeUpdatedTiteleInput" type="password" name="password" placeholder="סיסמה" required>
+            <a class="dialogTitle" (click)="showForgotPassword()">?שכחתי סיסמה</a>
+        </div>
+        <button class="submitButton">כניסה</button>
+    </div>
+    <div *ngIf="forgatPassword">
+        <div class="resetPassword">
+            <label class="dialogTitle">שחזור סיסמה</label>
+            <input class="WantToBeUpdatedTiteleInput" type="password" name="password" placeholder="מייל" required>
+            <button class="submitButton">שלח למייל סיסימה חדשה</button>
         </div>
     </div>
-    <button class="submitButton">כניסה</button>
 </div>

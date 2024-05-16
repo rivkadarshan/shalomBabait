@@ -8,10 +8,8 @@ footer {
   padding: 10rem 17rem 8rem 17rem;
 }
 #toDonate {
-  text-decoration: underline;
-  text-decoration-color: #022F39;
-  text-decoration-style: solid;
-  text-underline-offset: 0.3rem;  /* Adjust the value to set the desired distance */
+  line-height: 2rem;
+  border-bottom: 2px solid #022F39;
 }
 
 .userInformation{

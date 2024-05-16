@@ -10,15 +10,32 @@
     direction: rtl;
 }
 
+.titleContainer {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.dialogTitle {
+    color: #022F39;
+    font-size: 2rem;
+    line-height: 19.8px;
+    cursor: pointer;
+}
+
+.dialogTitle.active {
+    border-bottom: 2px solid #022F39;
+}
 .enrollment {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     width: 100%;
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 0;
 }
-.connection{
-  padding: 2rem 0 2rem 0;
+
+.connection {
+    padding: 2rem 0;
 }
 
 .WantToBeUpdatedTiteleInput {
@@ -30,10 +47,6 @@
 .fullWidth {
     grid-column: span 2;
 }
-
-.dialogTitle {
-    color: #022F39;
-    font-size: 2rem;
-    line-height: 19.8px;
-    display: inline-block; /* הוספת תכונת התצוגה */
+.enrollment .submitButton{
+    align-items: flex-end; /* Align items to the end (right in RTL) */
 }
