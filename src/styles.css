@@ -13,15 +13,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   font-weight: 900;
   line-height: 2.2rem;
 }
-.consultationAppointmentButton{
-   background-color: #BB7E2B;
-   border: none;
-   border-radius: 0rem 5.3rem 0rem 0rem;
-   height: 8rem;
-   width: 32rem;
-   font-weight: 700;
-   font-size: 2rem;
- }
+
  a {
   color: white;
   font-size: large;
@@ -57,7 +49,7 @@ a:hover {
 .WantToBeUpdatedTiteleInput{
   width: 40rem;
   height: 4.5rem;
-  background: none;
+  background:none;
   border-radius:5rem;
   color: #ffffff;
   border: 0.2rem solid #022F39; 
@@ -65,11 +57,15 @@ a:hover {
   margin-top: 1rem;
   direction: rtl;
   box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
+
 }
   .WantToBeUpdatedTiteleInput::placeholder{
      color: white;
      padding: 1rem;
   }
+  .WantToBeUpdatedTiteleInput:focus {
+    outline: none;
+}
   /* כפתור שליחת הודעה */
   .submitButton{
     border: 0.2rem solid #022F39;
@@ -81,6 +77,8 @@ a:hover {
     align-self: flex-start;
     margin-top: auto;
     margin-left: 0;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 /* כפתור גלילה לראש העמוד */
 .scrollToTopButton {
@@ -98,3 +96,9 @@ a:hover {
 .fa-whatsapp {
   font-size: 2.7rem;
 }
+
+.mat-mdc-dialog-surface.mdc-dialog__surface {
+  border-radius: 15%;
+}
+.bottomLine{
+  border-bottom: 2px solid #022F39;}

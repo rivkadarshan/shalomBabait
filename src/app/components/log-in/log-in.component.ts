@@ -18,8 +18,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./log-in.component.css']
 })
 export class LogInComponent {
-  enrollmentFormDisplayed: boolean = true;
-  connectionFormDisplayed: boolean = false;
+  enrollmentFormDisplayed: boolean = false;
+  connectionFormDisplayed: boolean = true;
   forgatPassword: boolean = false;
 
   showEnrollmentForm() {
