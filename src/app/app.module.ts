@@ -37,6 +37,7 @@ import { HomeComponent } from './components/home/home.component';
 import { DetilsContactComponent } from './components/detils-contact/detils-contact.component';
 import { RegistrationFormComponent } from './components/registration-form/registration-form.component';
 import { LogInComponent } from './components/log-in/log-in.component';
+import { ConsultationMeetingComponent } from './components/consultation-meeting/consultation-meeting.component';
 
 @NgModule({
     declarations: [
@@ -55,7 +56,8 @@ import { LogInComponent } from './components/log-in/log-in.component';
         HomeComponent,
         DetilsContactComponent,
         RegistrationFormComponent,
-        LogInComponent
+        LogInComponent,
+        ConsultationMeetingComponent
     ],
     imports: [
         BrowserModule,
