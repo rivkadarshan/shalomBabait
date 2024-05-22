@@ -1,4 +1,13 @@
+
 .detilsContactComponent{
-    background-color:#BB7E2B ;
-    padding:20%;
+    background-color: #022F39 ;
+    padding:15%;
+}
+.detilsContact{
+    background-color: #BB7E2B;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }
