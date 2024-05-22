@@ -1,10 +1,11 @@
 <div class="logInComponent">
     <div class="titleContainer">
-        <label class="dialogTitle" [class.active]="enrollmentFormDisplayed" (click)="showEnrollmentForm()">הרשמה</label>
-        <label class="dialogTitle" [class.active]="connectionFormDisplayed" (click)="showConnectionForm()">התחברות</label>
+
+
     </div>
     <div *ngIf="enrollmentFormDisplayed">
-        <div class="enrollment">
+        <label class="dialogTitle" [class.active]="enrollmentFormDisplayed" (click)="showEnrollmentForm()">הרשמה</label>
+        <div class="enrollment">      
             <input class="WantToBeUpdatedTiteleInput" type="text" name="firstName" placeholder="*שם פרטי" required>
             <input class="WantToBeUpdatedTiteleInput" type="text" name="lastName" placeholder="*שם משפחה" required>
             <input class="WantToBeUpdatedTiteleInput" type="text" name="id" placeholder="תז">
@@ -19,11 +20,12 @@
         <button class="submitButton">כניסה</button>
     </div>
     <div *ngIf="connectionFormDisplayed">
+        <label class="dialogTitle" [class.active]="connectionFormDisplayed" (click)="showConnectionForm()">התחברות</label>
         <div class="connection">
             <input class="WantToBeUpdatedTiteleInput" type="text" name="username" placeholder="שם משתמש" required>
             <input class="WantToBeUpdatedTiteleInput" type="password" name="password" placeholder="סיסמה" required>
-            <a class="dialogTitle" (click)="showForgotPassword()">שכחתי סיסמה</a>
-            <label class="dialogTitle bottomLine" [class.active]="enrollmentFormDisplayed" (click)="showEnrollmentForm()">עוד לא הצטרפת אלינו?</label>
+            <a class="subtitle" (click)="showForgotPassword()">?שכחת סיסמה</a>
+            <label class="subtitle" (click)="showEnrollmentForm()">?עוד לא הצטרפת אלינו</label>
         </div>
         <button class="submitButton">כניסה</button>
     </div>

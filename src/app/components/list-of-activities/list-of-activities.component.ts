@@ -43,7 +43,7 @@ export class ListOfActivitiesComponent {
     alert(activity.titleActivities)
     const dialogRef = this.dialog.open(RegistrationFormComponent, {
       // width: '250px', // ניתן להתאים את הרוחב והגובה לפי הצורך
-      data: { data: activity } // Pass activity data to the dialo
+      data: { data: activity.titleActivities } // Pass activity data to the dialo
     });
 alert
     dialogRef.afterClosed().subscribe(result => {

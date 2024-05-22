@@ -1,10 +1,21 @@
-<form class="RegistrationForm" #emailForm="ngForm">
+<form class="RegistrationFormComponent" #emailForm="ngForm">
     <ng-container *ngIf="activity">
-      <label>הרשמה ל{{ activity.titleActivities }}</label>
+      <label class="dialogTitle">הרשמה ל{{ activity}}</label>
     </ng-container>
-    <input class="WantToBeUpdatedTiteleInput" type="text" name="name" placeholder="שם" required>
+    <div class="RegistrationForm">
+    <input class="WantToBeUpdatedTiteleInput" type="text" name="name" placeholder="שם פרטי" required>
+    <input class="WantToBeUpdatedTiteleInput" type="text" name="name" placeholder="שם משפחה" required>
+    <input class="WantToBeUpdatedTiteleInput" type="text" name="name" placeholder="כתובת" required>
+    <input class="WantToBeUpdatedTiteleInput" type="text" name="name" placeholder="טלפון" required>
     <input class="WantToBeUpdatedTiteleInput" type="email" name="email" placeholder="מייל" required>
-    <input class="WantToBeUpdatedTiteleInput" type="tel" name="phone" placeholder="טלפון" required>
-    <button class="submitButton" type="button" [disabled]="emailForm.invalid">אישור</button>
+    <input class="WantToBeUpdatedTiteleInput" type="tel" name="phone" placeholder="מה אמצעי הקשר המועדף" required>
+    <select id="marital-status" name="marital-status" class="WantToBeUpdatedTiteleInput selectInput" required>
+      <option value="" disabled selected>בחר מצב משפחתי</option>
+      <option value="single">רווק</option>
+      <option value="married">נשוי</option>
+      <option value="divorced">גרוש</option>
+   </select>
+</div>  
+  <button class="submitButton" type="button" [disabled]="emailForm.invalid">אישור</button>
   </form>
   

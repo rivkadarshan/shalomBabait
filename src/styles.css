@@ -53,18 +53,20 @@ a:hover {
   border-radius:5rem;
   color: #ffffff;
   border: 0.2rem solid #022F39; 
-  left: 10rem;
-  margin-top: 1rem;
+  margin: 0.5rem 0 0.5rem 0; 
   direction: rtl;
   box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
-
 }
   .WantToBeUpdatedTiteleInput::placeholder{
      color: white;
      padding: 1rem;
   }
   .WantToBeUpdatedTiteleInput:focus {
+    box-shadow: 0 0 5px white;
     outline: none;
+}
+.selectInput{
+  background-color: #BB7E2B;
 }
   /* כפתור שליחת הודעה */
   .submitButton{
@@ -74,12 +76,13 @@ a:hover {
     width: 10rem;
     height: 3.5rem;
     box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
-    align-self: flex-start;
-    margin-top: auto;
-    margin-left: 0;
+    align-self: end !important;;
     font-weight: 700;
     font-size: 1.5rem;
+    margin-top: 1rem;
 }
+.bottomLine{
+  border-bottom: 2px solid #022F39;}
 /* כפתור גלילה לראש העמוד */
 .scrollToTopButton {
   background-color: #BB7E2B;
@@ -101,4 +104,31 @@ a:hover {
   border-radius: 15%;
 }
 .bottomLine{
-  border-bottom: 2px solid #022F39;}
+  border-bottom: 2px solid #022F39;
+}
+/* כותרות */
+.dialogTitle {
+  color: #022F39;
+  font-size: 2rem;
+  line-height: 19.8px;
+  cursor: pointer;
+  justify-content: center;
+  display: flex;
+  text-decoration: underline;
+}
+.subtitle{
+  color: #022F39;
+  font-size: 2rem;
+  line-height: 19.8px;
+  cursor: pointer;
+  justify-content: right;
+  display: flex;
+}
+/* שינוי עיצוב לדיאלוג של אנגולר מטריאל */
+.mat-mdc-dialog-container .mdc-dialog__surface {
+  border-radius:5rem  !important;
+}
+.cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
+  opacity: 80%;
+  background-color: #022F39;
+}

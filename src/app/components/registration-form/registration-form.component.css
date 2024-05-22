@@ -1,5 +1,15 @@
-.RegistrationForm{
-    display: grid;
+.RegistrationFormComponent{
     background-color: #BB7E2B;
-    padding: 2rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
 }
+.RegistrationForm{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    direction: rtl;
+}
+

@@ -8,24 +8,11 @@ import { Activities } from 'src/app/classes/activities';
   styleUrls: ['./registration-form.component.css']
 })
 export class RegistrationFormComponent {
-  // // Define a variable to hold the activity data
-  // activity: Activities;
-
-  // constructor(
-  //   private dialogRef: MatDialogRef<RegistrationFormComponent>,
-  //   @Inject(MAT_DIALOG_DATA) public data: Activities
-  // ) {
-  //   console.log(data)
-  //   alert(data)
-  //   // Assign the data to the variable
-  //   this.activity = data;
-  //   alert(this.activity.activitiesId)
-  // }
-  activity: Activities | undefined;
+  activity:string="";
 
   constructor(
     private dialogRef: MatDialogRef<RegistrationFormComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: Activities
+    @Inject(MAT_DIALOG_DATA) public data:string
   ) {}
 
   ngOnInit() {

@@ -13,9 +13,10 @@ footer {
 } */
 
 .userInformation{
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 2rem;
 }
 
 .WantToBeUpdatedTitele{
