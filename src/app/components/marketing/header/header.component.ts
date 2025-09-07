@@ -2,7 +2,7 @@ import { Component, ElementRef, EventEmitter, OnInit, Output } from '@angular/co
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { LogInComponent } from '../log-in/log-in.component';
-import { ConsultationMeetingComponent } from '../consultation-meeting/consultation-meeting.component';
+import { ConsultationMeetingComponent } from '../../consultation-meeting/consultation-meeting.component';
 
 @Component({
   selector: 'app-header',
