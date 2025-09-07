@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Activities } from './classes/activities';
-import {SignUpForCourseComponent} from '././components/pages/sign-up-for-course/sign-up-for-course.component';
+import {SignUpForCourseComponent} from './components/marketing/sign-up-for-course/sign-up-for-course.component';
 import { HomeComponent } from './components/marketing/home/home.component'
 import { DetilsContactComponent } from './components/marketing/detils-contact/detils-contact.component';
 import { RegistrationFormComponent } from './components/registration-form/registration-form.component';

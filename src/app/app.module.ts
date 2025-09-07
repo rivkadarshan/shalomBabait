@@ -30,7 +30,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatTableModule } from '@angular/material/table';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-import { SignUpForCourseComponent } from './components/pages/sign-up-for-course/sign-up-for-course.component';
+import { SignUpForCourseComponent } from './components/marketing/sign-up-for-course/sign-up-for-course.component';
 import { HomeComponent } from './components/marketing/home/home.component';
 import { DetilsContactComponent } from './components/marketing/detils-contact/detils-contact.component';
 import { RegistrationFormComponent } from './components/registration-form/registration-form.component';
