@@ -1,0 +1,24 @@
+<!-- conference.component.html -->
+
+<!-- רשימת כנסים -->
+<div class="conferences">
+  <button *ngFor="let conf of conferences" (click)="selectConference(conf)">
+    {{ conf.title }}
+  </button>
+</div>
+
+<!-- רשימת מרצים -->
+<div *ngIf="selectedConference" class="speakers">
+  <button *ngFor="let speaker of selectedConference.speakers" 
+          (click)="selectSpeaker(speaker)">
+    {{ speaker.name }}
+  </button>
+</div>
+
+<!-- ווידאו של המרצה הנבחר -->
+<div *ngIf="selectedSpeaker" class="video">
+  <iframe width="560" height="315" 
+          [src]="'https://www.youtube.com/embed/' + selectedSpeaker.videoId | safeUrl"
+          frameborder="0" allowfullscreen>
+  </iframe>
+</div>
