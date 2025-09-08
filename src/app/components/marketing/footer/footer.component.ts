@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { EmailService } from '../../services/email.service';
-import { PersonGetUpdates } from '../../classes/person-get-updates';
+import { EmailService } from '../../../services/email.service';
+import { PersonGetUpdates } from '../../../classes/person-get-updates';
 
 @Component({
   selector: 'app-footer',

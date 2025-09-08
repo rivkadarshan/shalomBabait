@@ -6,16 +6,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from "./components/header/header.component";
-import { AdvertisingComponent } from "./components/advertising/advertising.component";
-import { AboutComponent } from "./components/about/about.component";
-import { DonateButtonComponent } from "./components/donate-button/donate-button.component";
-import { FooterComponent } from "./components/footer/footer.component";
-import { ListOfActivitiesComponent } from './components/list-of-activities/list-of-activities.component';
-import { WeNumbersComponent } from "./components/we-numbers/we-numbers.component";
-import { ContactComponent } from "./components/contact/contact.component";
-import { TheySayAboutUsComponent } from './components/they-say-about-us/they-say-about-us.component';
-
+import { HeaderComponent } from "./components/marketing/header/header.component";
+import { AdvertisingComponent } from "./components/marketing/advertising/advertising.component";
+import { AboutComponent } from "./components/marketing/about/about.component";
+import { DonateButtonComponent } from "./components/marketing/donate-button/donate-button.component";
+import { FooterComponent } from "./components/marketing/footer/footer.component";
+import { ListOfActivitiesComponent } from './components/marketing/list-of-activities/list-of-activities.component';
+import { WeNumbersComponent } from "./components/marketing/we-numbers/we-numbers.component";
+import { ContactComponent } from "./components/marketing/contact/contact.component";
+import { TheySayAboutUsComponent } from './components/marketing/they-say-about-us/they-say-about-us.component';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -30,15 +29,18 @@ import { MatListModule } from '@angular/material/list';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatTableModule } from '@angular/material/table';
-import { LinkContentComponent } from './components/link-content/link-content.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-import { SignUpForCourseComponent } from './components/pages/sign-up-for-course/sign-up-for-course.component';
-import { HomeComponent } from './components/home/home.component';
-import { DetilsContactComponent } from './components/detils-contact/detils-contact.component';
+import { SignUpForCourseComponent } from './components/marketing/sign-up-for-course/sign-up-for-course.component';
+import { HomeComponent } from './components/marketing/home/home.component';
+import { DetilsContactComponent } from './components/marketing/detils-contact/detils-contact.component';
 import { RegistrationFormComponent } from './components/registration-form/registration-form.component';
-import { LogInComponent } from './components/log-in/log-in.component';
+import { LogInComponent } from './components/marketing/log-in/log-in.component';
 import { ConsultationMeetingComponent } from './components/consultation-meeting/consultation-meeting.component';
-
+import { AdminDashboardComponent } from './components/personal-area/admin/admin-dashboard/admin-dashboard.component';
+import { SecretaryDashboardComponent } from './components/personal-area/secretary/secretary-dashboard/secretary-dashboard.component';
+import { TherapistDashboardComponent } from './components/personal-area/therapist/therapist-dashboard/therapist-dashboard.component';
+import { PatientDashboardComponent } from './components/personal-area/patient/patient-dashboard/patient-dashboard.component';
+import {LinkContentComponent} from './components/marketing/link-content/link-content.component'
 @NgModule({
     declarations: [
         AppComponent,
@@ -57,7 +59,10 @@ import { ConsultationMeetingComponent } from './components/consultation-meeting/
         DetilsContactComponent,
         RegistrationFormComponent,
         LogInComponent,
-        ConsultationMeetingComponent
+        ConsultationMeetingComponent,
+        AdminDashboardComponent,
+        SecretaryDashboardComponent,
+        TherapistDashboardComponent,
     ],
     imports: [
         BrowserModule,
