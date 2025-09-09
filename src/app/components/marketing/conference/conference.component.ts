@@ -1,5 +1,6 @@
-// conference.component.ts
-import { Component } from '@angular/core';
+// src/app/conference/conference.component.ts
+import { Component, OnInit } from '@angular/core';
+import { ConferenceService } from '../../../services/conference.service';
 
 interface Speaker {
   name: string;
@@ -16,26 +17,20 @@ interface Conference {
   templateUrl: './conference.component.html',
   styleUrls: ['./conference.component.css']
 })
-export class ConferenceComponent {
-  conferences: Conference[] = [
-    {
-      title: 'כנס ניסן תשפא',
-      speakers: [
-        { name: 'הרב אילן', videoId: 'https://www.youtube.com/shorts/82l9BjIpgx4' },
-        { name: 'הרב רזיאל', videoId: 'https://www.youtube.com/shorts/82l9BjIpgx4' }
-      ]
-    },
-    {
-      title: 'כנס ניסן תשפב',
-      speakers: [
-        { name: 'הרב סילבר', videoId: 'https://www.youtube.com/shorts/82l9BjIpgx4' },
-        { name: 'הרב כהן', videoId: 'https://www.youtube.com/shorts/82l9BjIpgx4' }
-      ]
-    }
-  ];
 
+export class ConferenceComponent implements OnInit {
+  conferences: Conference[] = [];
   selectedConference: Conference | null = null;
   selectedSpeaker: Speaker | null = null;
+
+  constructor(private conferenceService: ConferenceService) {    console.log("ConferenceComponent נטען בהצלחה!");
+}
+
+  ngOnInit(): void {
+    this.conferenceService.getConferences().subscribe(data => {
+      this.conferences = data;
+    });
+  }
 
   selectConference(conf: Conference) {
     this.selectedConference = conf;
