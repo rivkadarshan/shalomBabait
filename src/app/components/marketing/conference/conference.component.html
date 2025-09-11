@@ -1,15 +1,16 @@
-<!-- conference.component.html -->
 
-<!-- רשימת כנסים -->
-<div class="conferences">
-  <button *ngFor="let conf of conferences" (click)="selectConference(conf)">
+<!-- רשימת כנסים --><div class="conferences">
+  <button mat-raised-button color="primary"
+          *ngFor="let conf of conferences"
+          (click)="selectConference(conf)">
     {{ conf.title }}
   </button>
 </div>
 
 <!-- רשימת מרצים -->
 <div *ngIf="selectedConference" class="speakers">
-  <button *ngFor="let speaker of selectedConference.speakers" 
+  <button mat-stroked-button color="accent"
+          *ngFor="let speaker of selectedConference.speakers"
           (click)="selectSpeaker(speaker)">
     {{ speaker.name }}
   </button>
