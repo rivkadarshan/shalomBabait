@@ -1,0 +1,28 @@
+<div class="patient-list-container">
+    <div class="patient-list">
+        <div class="title-section">
+            <span style="font-size: 28px;"><b>רשימת מטופלים</b></span>
+            <div class="divider">
+                <button class="icon-button" mat-icon-button>
+                    <mat-icon>add</mat-icon>
+                </button>
+                <button class="find-patient-button" mat-button>
+                    &nbsp;
+                    חיפוש מטופל
+                    <mat-icon>arrow_forward</mat-icon>
+                </button>
+            </div>
+        </div>
+        <div class="patient-card" *ngFor="let patient of patients">
+            <div class="patient-info">
+                <span class="patient-name">{{ patient.name }}</span>
+            </div>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="חיפוש מטופל" class="search-input"/>
+            <button class="icon-button" mat-icon-button>
+                <mat-icon>search</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>

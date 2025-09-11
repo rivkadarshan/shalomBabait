@@ -10,11 +10,13 @@ import { authGuard } from './guard/auth.guard';
 import { SecretaryDashboardComponent } from './components/personal-area/secretary/secretary-dashboard/secretary-dashboard.component';
 import { TherapistDashboardComponent } from './components/personal-area/therapist/therapist-dashboard/therapist-dashboard.component';
 import { PatientDashboardComponent } from './components/personal-area/patient/patient-dashboard/patient-dashboard.component';
+import { PatientListComponent } from './components/personal-area/therapist/patient-list/patient-list.component';
 const routes: Routes = 
 [
   { path: '', component: HomeComponent },
   { path: 'SignUpForCourse', component: SignUpForCourseComponent },
   { path: 'contact', component: DetilsContactComponent },
+  { path: 'patientsList', component: PatientListComponent },
   { path: 'RegistrationForm', component: RegistrationFormComponent },
   { 
     path: 'admin-dashboard', 

@@ -29,7 +29,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatTableModule } from '@angular/material/table';
-import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { SignUpForCourseComponent } from './components/marketing/sign-up-for-course/sign-up-for-course.component';
 import { HomeComponent } from './components/marketing/home/home.component';
 import { DetilsContactComponent } from './components/marketing/detils-contact/detils-contact.component';
@@ -40,7 +40,9 @@ import { AdminDashboardComponent } from './components/personal-area/admin/admin-
 import { SecretaryDashboardComponent } from './components/personal-area/secretary/secretary-dashboard/secretary-dashboard.component';
 import { TherapistDashboardComponent } from './components/personal-area/therapist/therapist-dashboard/therapist-dashboard.component';
 import { PatientDashboardComponent } from './components/personal-area/patient/patient-dashboard/patient-dashboard.component';
-import {LinkContentComponent} from './components/marketing/link-content/link-content.component'
+import { LinkContentComponent } from './components/marketing/link-content/link-content.component';
+import { PatientListComponent } from './components/personal-area/therapist/patient-list/patient-list.component';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -55,6 +57,7 @@ import {LinkContentComponent} from './components/marketing/link-content/link-con
         TheySayAboutUsComponent,
         LinkContentComponent,
         SignUpForCourseComponent,
+        PatientListComponent,
         HomeComponent,
         DetilsContactComponent,
         RegistrationFormComponent,
@@ -88,4 +91,4 @@ import {LinkContentComponent} from './components/marketing/link-content/link-con
     providers: [],
     bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

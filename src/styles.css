@@ -132,3 +132,5 @@ a:hover {
   opacity: 80%;
   background-color: #022F39;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
