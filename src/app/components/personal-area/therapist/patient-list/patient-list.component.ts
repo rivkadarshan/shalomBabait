@@ -15,7 +15,6 @@ export class PatientListComponent {
   ];
 
   viewPatientDetails(patient: any) {
-    // כאן תוכל להוסיף את הלוגיקה להצגת פרטי המטופל
     console.log(patient);
   }
 }
