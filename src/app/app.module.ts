@@ -42,10 +42,6 @@ import { TherapistDashboardComponent } from './components/personal-area/therapis
 import { PatientDashboardComponent } from './components/personal-area/patient/patient-dashboard/patient-dashboard.component';
 import { LinkContentComponent } from './components/marketing/link-content/link-content.component';
 import { PatientListComponent } from './components/personal-area/therapist/patient-list/patient-list.component';
-<<<<<<< HEAD
-=======
-import { ConferenceComponent } from './components/marketing/conference/conference.component';
->>>>>>> 4b6c1c09e5b99f8cb9178b35db3a8f0ce57adc73
 
 @NgModule({
     declarations: [
