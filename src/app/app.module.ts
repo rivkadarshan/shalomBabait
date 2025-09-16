@@ -42,6 +42,8 @@ import { TherapistDashboardComponent } from './components/personal-area/therapis
 import { PatientDashboardComponent } from './components/personal-area/patient/patient-dashboard/patient-dashboard.component';
 import { LinkContentComponent } from './components/marketing/link-content/link-content.component';
 import { PatientListComponent } from './components/personal-area/therapist/patient-list/patient-list.component';
+import { ConferenceComponent } from './components/marketing/conference/conference.component';
+import { SafeUrlPipe } from './pipes/safe-url.pipe'
 
 @NgModule({
     declarations: [
@@ -66,6 +68,8 @@ import { PatientListComponent } from './components/personal-area/therapist/patie
         AdminDashboardComponent,
         SecretaryDashboardComponent,
         TherapistDashboardComponent,
+        ConferenceComponent,
+        SafeUrlPipe,
     ],
     imports: [
         BrowserModule,

@@ -1,0 +1,14 @@
+.conferences button, .speakers button {
+  margin: 5px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #3b6a7a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.conferences button:hover, .speakers button:hover {
+  background-color: #2e5360;
+}
+
