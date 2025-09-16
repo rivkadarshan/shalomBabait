@@ -25,9 +25,9 @@
 // }
 // }
 import { Component, Inject, Input } from '@angular/core';
-import { Activities } from '../../classes/activities';
+import { Activities } from '../../../classes/activities';
 import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
-import { RegistrationFormComponent } from '../registration-form/registration-form.component';
+import { RegistrationFormComponent } from '../../registration-form/registration-form.component';
 
 @Component({
   selector: 'app-list-of-activities',

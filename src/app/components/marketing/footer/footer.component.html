@@ -21,14 +21,18 @@
     </ul>
   </div>
   <form class="getUpdates" (ngSubmit)="sendEmail()" #emailForm="ngForm">
-    <div class="userInformation">
-      <label class="WantToBeUpdatedTitele">רוצים להיות מעודכנים?</label>
-      <input class="WantToBeUpdatedTiteleInput" type="text" name="name" [(ngModel)]="formData.name" placeholder="שם" required>
-      <input class="WantToBeUpdatedTiteleInput" type="email" name="email" [(ngModel)]="formData.email" placeholder="מייל" required>
-      <input class="WantToBeUpdatedTiteleInput" type="tel" name="phone" [(ngModel)]="formData.phone" placeholder="טלפון" required>
-      <label><input type="checkbox" name="agree" [(ngModel)]="formData.agree" required>אני מאשר קבלת עידכונים ותכנים של "שלום בבית"</label>
-      <button class="submitButton" type="button" (click)="sendEmail()" [disabled]="emailForm.invalid">שלח</button>
-    </div>
-  </form>
+  <div class="userInformation">
+    <label class="WantToBeUpdatedTitele">רוצים להיות מעודכנים?</label>
+    <input class="WantToBeUpdatedTiteleInput" type="text" name="name" [(ngModel)]="formData.name" placeholder="שם" required>
+    <input class="WantToBeUpdatedTiteleInput" type="email" name="email" [(ngModel)]="formData.email" placeholder="מייל" required>
+    <input class="WantToBeUpdatedTiteleInput" type="tel" name="phone" [(ngModel)]="formData.phone" placeholder="טלפון" required>
+    <label>
+      <input type="checkbox" name="agree" [(ngModel)]="formData.agree" required>
+      אני מאשר קבלת עידכונים ותכנים של "שלום בבית"
+    </label>
+    <button class="submitButton" type="submit" [disabled]="emailForm.invalid">שלח</button>
+  </div>
+</form>
 </footer>
+<app-therapist-calendar></app-therapist-calendar>
 
