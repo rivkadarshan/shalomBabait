@@ -40,7 +40,10 @@ import { AdminDashboardComponent } from './components/personal-area/admin/admin-
 import { SecretaryDashboardComponent } from './components/personal-area/secretary/secretary-dashboard/secretary-dashboard.component';
 import { TherapistDashboardComponent } from './components/personal-area/therapist/therapist-dashboard/therapist-dashboard.component';
 import { PatientDashboardComponent } from './components/personal-area/patient/patient-dashboard/patient-dashboard.component';
-import {LinkContentComponent} from './components/marketing/link-content/link-content.component'
+import {LinkContentComponent} from './components/marketing/link-content/link-content.component';
+import { ConferenceComponent } from './components/marketing/conference/conference.component';
+import { SafeUrlPipe } from './pipes/safe-url.pipe'
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -63,6 +66,8 @@ import {LinkContentComponent} from './components/marketing/link-content/link-con
         AdminDashboardComponent,
         SecretaryDashboardComponent,
         TherapistDashboardComponent,
+        ConferenceComponent,
+        SafeUrlPipe,
     ],
     imports: [
         BrowserModule,
