@@ -38,9 +38,9 @@ import { LogInComponent } from './components/marketing/log-in/log-in.component';
 import { ConsultationMeetingComponent } from './components/consultation-meeting/consultation-meeting.component';
 import { AdminDashboardComponent } from './components/personal-area/admin/admin-dashboard/admin-dashboard.component';
 import { SecretaryDashboardComponent } from './components/personal-area/secretary/secretary-dashboard/secretary-dashboard.component';
-import { TherapistDashboardComponent } from './components/personal-area/therapist/therapist-dashboard/therapist-dashboard.component';
 import { PatientDashboardComponent } from './components/personal-area/patient/patient-dashboard/patient-dashboard.component';
-import { LinkContentComponent } from './components/marketing/link-content/link-content.component';
+import {LinkContentComponent} from './components/marketing/link-content/link-content.component';
+import { TherapistCalendarComponent } from './components/personal-area/therapist/therapist-calendar/therapist-calendar.component'
 
 @NgModule({
     declarations: [
@@ -61,8 +61,9 @@ import { LinkContentComponent } from './components/marketing/link-content/link-c
         ConsultationMeetingComponent,
         AdminDashboardComponent,
         SecretaryDashboardComponent,
+        TherapistCalendarComponent,
+        PatientDashboardComponent
         TherapistDashboardComponent,
-        PatientDashboardComponent,
         LinkContentComponent,
     ],
     imports: [

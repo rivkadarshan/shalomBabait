@@ -15,31 +15,31 @@ const routes: Routes =
   { path: '', component: HomeComponent },
   { path: 'SignUpForCourse', component: SignUpForCourseComponent },
   { path: 'contact', component: DetilsContactComponent },
-  { path: 'RegistrationForm', component: RegistrationFormComponent },
-  { 
-    path: 'admin-dashboard', 
-    component: AdminDashboardComponent, 
-    canActivate: [authGuard], 
-    data: { expectedRole: 'admin' } 
-  },
-  { 
-    path: 'secretary-dashboard', 
-    component: SecretaryDashboardComponent, 
-    canActivate: [authGuard], 
-    data: { expectedRole: 'secretary' } 
-  },
-  { 
-    path: 'therapist-dashboard', 
-    component: TherapistDashboardComponent, 
-    canActivate: [authGuard], 
-    data: { expectedRole: 'therapist' } 
-  },
-  { 
-    path: 'patient-dashboard', 
-    component: PatientDashboardComponent, 
-    canActivate: [authGuard], 
-    data: { expectedRole: 'patient' } 
-  },
+  // { path: 'RegistrationForm', component: RegistrationFormComponent },
+  // { 
+  //   path: 'admin-dashboard', 
+  //   component: AdminDashboardComponent, 
+  //   canActivate: [authGuard], 
+  //   data: { expectedRole: 'admin' } 
+  // },
+  // { 
+  //   path: 'secretary-dashboard', 
+  //   component: SecretaryDashboardComponent, 
+  //   canActivate: [authGuard], 
+  //   data: { expectedRole: 'secretary' } 
+  // },
+  // // { 
+  // //   path: 'therapist-dashboard', 
+  // //   component: TherapistDashboardComponent, 
+  // //   canActivate: [authGuard], 
+  // //   data: { expectedRole: 'therapist' } 
+  // // },
+  // { 
+  //   path: 'patient-dashboard', 
+  //   component: PatientDashboardComponent, 
+  //   canActivate: [authGuard], 
+  //   data: { expectedRole: 'patient' } 
+  // },
 ];
 
 @NgModule({
