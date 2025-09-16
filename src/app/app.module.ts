@@ -10,6 +10,7 @@ import { HeaderComponent } from "./components/marketing/header/header.component"
 import { AdvertisingComponent } from "./components/marketing/advertising/advertising.component";
 import { AboutComponent } from "./components/marketing/about/about.component";
 import { DonateButtonComponent } from "./components/marketing/donate-button/donate-button.component";
+
 import { FooterComponent } from "./components/marketing/footer/footer.component";
 import { ListOfActivitiesComponent } from './components/marketing/list-of-activities/list-of-activities.component';
 import { WeNumbersComponent } from "./components/marketing/we-numbers/we-numbers.component";
@@ -32,7 +33,6 @@ import { MatTableModule } from '@angular/material/table';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { SignUpForCourseComponent } from './components/marketing/sign-up-for-course/sign-up-for-course.component';
 import { HomeComponent } from './components/marketing/home/home.component';
-import { DetilsContactComponent } from './components/marketing/detils-contact/detils-contact.component';
 import { RegistrationFormComponent } from './components/registration-form/registration-form.component';
 import { LogInComponent } from './components/marketing/log-in/log-in.component';
 import { ConsultationMeetingComponent } from './components/consultation-meeting/consultation-meeting.component';
@@ -41,6 +41,7 @@ import { SecretaryDashboardComponent } from './components/personal-area/secretar
 import { PatientDashboardComponent } from './components/personal-area/patient/patient-dashboard/patient-dashboard.component';
 import {LinkContentComponent} from './components/marketing/link-content/link-content.component';
 import { TherapistCalendarComponent } from './components/personal-area/therapist/therapist-calendar/therapist-calendar.component'
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -53,10 +54,8 @@ import { TherapistCalendarComponent } from './components/personal-area/therapist
         WeNumbersComponent,
         ContactComponent,
         TheySayAboutUsComponent,
-        LinkContentComponent,
         SignUpForCourseComponent,
         HomeComponent,
-        DetilsContactComponent,
         RegistrationFormComponent,
         LogInComponent,
         ConsultationMeetingComponent,
@@ -64,6 +63,8 @@ import { TherapistCalendarComponent } from './components/personal-area/therapist
         SecretaryDashboardComponent,
         TherapistCalendarComponent,
         PatientDashboardComponent
+        TherapistDashboardComponent,
+        LinkContentComponent,
     ],
     imports: [
         BrowserModule,
