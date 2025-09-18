@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://your-production-api.com' // כתובת אמיתית בפרודקשן
+  apiUrl: 'brides-project-backend.vercel.app' // כתובת אמיתית בפרודקשן
 };

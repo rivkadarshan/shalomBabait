@@ -42,6 +42,7 @@ import { PatientDashboardComponent } from './components/personal-area/patient/pa
 import { LinkContentComponent } from './components/marketing/link-content/link-content.component';
 import { PatientListComponent } from './components/personal-area/therapist/patient-list/patient-list.component';
 import { TherapistCalendarComponent } from './components/personal-area/therapist/therapist-calendar/therapist-calendar.component'
+import { TherapistDashboardComponent } from './components/personal-area/therapist/therapist-dashboard/therapist-dashboard.component';
 
 @NgModule({
     declarations: [
@@ -65,7 +66,8 @@ import { TherapistCalendarComponent } from './components/personal-area/therapist
         SecretaryDashboardComponent,
         TherapistCalendarComponent,
         PatientDashboardComponent,
-        LinkContentComponent
+        TherapistDashboardComponent,
+        LinkContentComponent,
     ],
     imports: [
         BrowserModule,
