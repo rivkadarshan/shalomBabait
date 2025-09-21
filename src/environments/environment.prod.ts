@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'brides-project-backend.vercel.app' // כתובת אמיתית בפרודקשן
+  apiUrl: 'https://shalombabait-backend-production.up.railway.app' // כתובת אמיתית בפרודקשן
 };

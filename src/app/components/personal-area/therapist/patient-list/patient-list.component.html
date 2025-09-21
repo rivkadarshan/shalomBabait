@@ -1,4 +1,4 @@
-<div class="patient-list-container">
+<!-- <div class="patient-list-container">
     <div class="patient-list">
         <div class="title-section">
             <span style="font-size: 28px;"><b>רשימת מטופלים</b></span>
@@ -15,14 +15,31 @@
         </div>
         <div class="patient-card" *ngFor="let patient of patients">
             <div class="patient-info">
-                <span class="patient-name">{{ patient.name }}</span>
+                <span class="patient-name">{{ patient.firstName }} {{ patient.lastName }}</span>
             </div>
         </div>
-        <!-- <div class="search-container">
-            <input type="text" placeholder="חיפוש מטופל" class="search-input"/>
-            <button class="icon-button" mat-icon-button>
-                <mat-icon>search</mat-icon>
-            </button>
-        </div> -->
     </div>
-</div>
+</div> -->
+<div class="patient-list-container">
+    <div class="patient-list">
+      <div class="title-section">
+        <span style="font-size: 28px;"><b>רשימת מטופלים</b></span>
+        <div class="divider">
+          <button class="icon-button" mat-icon-button>
+            <mat-icon style="color: #BB7E2B;">add</mat-icon>
+          </button>
+          <button class="find-patient-button" mat-button>
+            חיפוש לפי שם
+            <mat-icon>arrow_forward</mat-icon>
+          </button>
+        </div>
+      </div>
+  
+      <div class="patient-card" *ngFor="let patient of patients" (click)="viewPatientDetails(patient)">
+        <div class="patient-info">
+          <span class="patient-name">{{ patient.firstName }} {{ patient.lastName }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
