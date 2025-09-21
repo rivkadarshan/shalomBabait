@@ -16,7 +16,8 @@ const routes: Routes =
   { path: '', component: HomeComponent },
   { path: 'SignUpForCourse', component: SignUpForCourseComponent },
   { path: 'contact', component: DetilsContactComponent },
-  { path: 'patientsList', component: PatientListComponent },
+  { path: 'patient', component: PatientDashboardComponent },
+  { path: 'patientList', component: PatientListComponent },
 ];
 
 @NgModule({

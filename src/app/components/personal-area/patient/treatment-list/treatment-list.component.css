@@ -1,0 +1,83 @@
+/* קונטיינר ראשי */
+.patient-list-container {
+    width: 95%;
+    margin: 8rem auto 0 auto;
+    background: whitesmoke;
+    padding: 2rem;
+    border-radius: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+/* כותרת ראשית */
+.patient-list-container h1 {
+    color: #022F39; /* צבע הכותרת הראשית */
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* שדה חיפוש */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.search-input {
+    width: 70%;
+    height: 4vh;
+    border: none;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    font-size: 16px;
+    background: rgb(167 195 201);
+    color: #022F39; /* צבע הטקסט בתוך השדה */
+}
+
+.search-input::placeholder {
+    color: #022F39; /* צבע placeholder */
+    opacity: 1; 
+    font-weight: bold; 
+}
+
+/* שורה של כותרות */
+.header-row {
+    display: flex;
+    background-color: #022F39; /* רקע הכותרות */
+    color: white; /* טקסט לבן */
+    font-weight: bold;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* שורות עם נתונים */
+.data-row {
+    display: flex;
+    background-color: #ffffff; /* רקע לבן לכל שורה */
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.3rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    color: black; /* טקסט שחור */
+}
+
+/* תאים בתוך השורה */
+.treatment-cell {
+    flex: 1 1 16%;
+    text-align: center;
+    padding: 0 0.5rem;
+}
+
+/* מובייל */
+@media screen and (max-width: 768px) {
+    .header-row, .data-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .treatment-cell {
+        flex: 1 1 100%;
+        text-align: left;
+        margin-bottom: 0.3rem;
+    }
+}
