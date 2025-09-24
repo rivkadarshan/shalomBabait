@@ -1,3 +1,4 @@
+
 .patient-list-container {
     align-items: center;
     justify-content: space-around;
@@ -48,11 +49,13 @@
     align-items: center;
     justify-content: center;
 }
+
 .patient-card{
     color: black;
     display: flex;
     justify-content: center;
 }
+
 .patient-info{
     background-color: rgb(232, 227, 227);
     height: 5vh;
@@ -62,6 +65,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: black;
 }
 .search-container{
     display: flex;

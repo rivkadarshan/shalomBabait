@@ -130,6 +130,8 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatTableModule } from '@angular/material/table';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card'; // הוספת MatCardModule
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { SignUpForCourseComponent } from './components/marketing/sign-up-for-course/sign-up-for-course.component';
 import { HomeComponent } from './components/marketing/home/home.component';
@@ -144,6 +146,7 @@ import { PatientListComponent } from './components/personal-area/therapist/patie
 import { TherapistCalendarComponent } from './components/personal-area/therapist/therapist-calendar/therapist-calendar.component'
 import { TherapistDashboardComponent } from './components/personal-area/therapist/therapist-dashboard/therapist-dashboard.component';
 import { TreatmentListComponent } from './components/personal-area/patient/treatment-list/treatment-list.component';
+import { AddPatientDialogComponent } from './components/personal-area/patient/add-patient-dialog/add-patient-dialog.component';
 
 
 @NgModule({
@@ -171,6 +174,7 @@ import { TreatmentListComponent } from './components/personal-area/patient/treat
     TherapistDashboardComponent,
     LinkContentComponent,
     TreatmentListComponent,
+    AddPatientDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -194,6 +198,8 @@ import { TreatmentListComponent } from './components/personal-area/patient/treat
     MatTableModule,
     MatCheckboxModule,
     MatCardModule, // הוספת MatCardModule
+    MatProgressSpinnerModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
