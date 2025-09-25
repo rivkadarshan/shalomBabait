@@ -4,9 +4,9 @@
   
     <!-- שדה חיפוש -->
     <div class="search-container">
-        <button class="icon-button" mat-icon-button>
-            <mat-icon style="color: #BB7E2B;">add</mat-icon>
-          </button>
+      <button class="icon-button" mat-icon-button (click)="openCreateTreatmentDialog()">
+        <mat-icon style="color: #BB7E2B;">add</mat-icon>
+      </button>      
       <input type="text" placeholder="חיפוש לפי תאריך" class="search-input" [(ngModel)]="searchTerm">
     </div>
   
